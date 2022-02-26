@@ -1,0 +1,36 @@
+.aboutMain {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+#heading {
+  text-align: center;
+  font-size: 72px;
+}
+#heading::after {
+  content: "E-SUMMIT";
+  color: aqua;
+}
+#outer {
+  /* position: absolute; */
+  margin: 5% auto;
+  width: 80vw;
+  height: 70vh;
+  position: relative;
+}
+#maintext {
+  text-justify: auto;
+  font-size: 25px;
+}
+#watermark {
+  font-family: heading;
+  font-size: 100px;
+  color: aqua;
+  position: absolute;
+  right: 10%;
+  bottom: 20%;
+  opacity: 0.75;
+}
