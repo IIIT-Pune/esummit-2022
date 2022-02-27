@@ -1,0 +1,47 @@
+.navbar-brand {
+  font-family: heading;
+  font-size: 20px !important;
+  color: white;
+  padding: 0px !important;
+}
+
+.navbar {
+  /* border-bottom: 1px solid #BBBBBB; */
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 20px 0px;
+  margin: 0px 0px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-link:hover {
+  opacity: 1;
+  color: #031d44;
+  /* color: aqua; */
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #031d44;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
