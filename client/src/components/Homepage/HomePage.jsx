@@ -7,8 +7,9 @@ import chatbot from "../images/Chatbot.png";
 import NavBar from "./NavBar";
 
 export default function Homepage() {
-  const preScrollY = useRef(0);
-  const [goingUp, setgoingUp] = useState(false);
+	const preScrollY = useRef(0);
+	const [goingUp, setgoingUp] = useState(false);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -99,4 +100,5 @@ export default function Homepage() {
       </div>
     </div>
   );
+
 }
