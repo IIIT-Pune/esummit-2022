@@ -6,14 +6,13 @@ import NavBar from "./components/Homepage/NavBar";
 import About from "./components/about/About";
 import EventSection from "./components/events-shelf/Section";
 import { Route, Routes } from "react-router-dom";
+import Speakers from "./components/Speakers/Speakers";
+import EventCard from "./components/events/EventCard";
 
 function App() {
 	return (
 		<>
-			{/* <div className="py-9 px-4">
-      <Cap />
-      <Dashboard />
-    </div> */}
+		
 
 			<Routes>
 				<Route
@@ -24,9 +23,11 @@ function App() {
 							<Homepage />
 							<About />
 							<EventSection />
+							{/* <Speakers /> */}
 						</div>
 					}
 				/>
+				<Route path="event" element={<EventCard />} />
 				<Route
 					path="campus"
 					element={
