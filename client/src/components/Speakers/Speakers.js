@@ -7,7 +7,7 @@ function Speakers() {
   return (
     <>
     <div className='container'>
-        <div className='headtx'>SPEAKER <div style={{color:'#68D4E8'}}>SESSIONS</div></div>
+        <div className='headtx'>SPEAKER <span style={{color:'#68D4E8'}}>SESSIONS</span></div>
     </div>
     <div className="container">
         <div className='row' style={{marginTop:'114px'}}>
