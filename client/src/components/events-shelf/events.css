@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+.events-section img{
+  vertical-align: bottom ;
+  display: unset;
+}
 .events-section{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     height:100vh;
-    width:100vw;
-    background-color: #000a0c;
+    position: relative;
+    background-color: #000;
   }
   .events-shelf{
-    position: relative;
-    top:20vh;
+    margin-top: 50px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
     /* height:100vh; */
   }
   
@@ -28,8 +35,8 @@
   
   .events-heading{
     font-size: 2rem;
-    margin:0;
-    position: relative;
+    text-align: center;
+
     top:10vh;
     color:#ffffff;
   }
@@ -37,11 +44,11 @@
     color:#85eefb;
   }
   .events-modal{
-      height:100vh;
-      width:100vw;
-      position:fixed;
+     position: absolute;
       display: none;
       z-index: 1;
+      height: 100%;
+      width: 100%;
   }
   .events-modal.show{
     display:block;
@@ -62,9 +69,9 @@
     flex-grow: 1;
   }
   .events-modal-page1 > img{
-      display: block;
+     
       position: relative;
-      margin: auto;
+
       /* height: 80%; */
   }
   .events-modal-page2{

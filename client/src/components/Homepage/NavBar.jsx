@@ -5,10 +5,10 @@ import "./NavBar.css";
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
+    <div className="absolute w-full">
       <nav className="navbar">
         <div className=" mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center justify-between ">
+          <div className="flex items-center justify-between ">
             <div className="w-full flex items-center justify-between">
               <div className="">
                 <a href="" className="navbar-brand">
@@ -46,7 +46,7 @@ function NavBar() {
               <div>
                 <button
                   type="submit"
-                  className="text-white border-2 hover:bg-white border-white hover:text-black font-semibold rounded-full m-2 p-2 px-3"
+                  className="text-white border-2 hover:bg-white border-white hover:text-black font-semibold rounded-full m-2 py-1 px-3 text-sm transition duration-150 ease-in-out"
                 >
                   REGISTER NOW
                 </button>
@@ -110,7 +110,7 @@ function NavBar() {
         >
           {(ref) => (
             <div className="md:hidden backdrop-blur" id="mobile-menu">
-              <div ref={ref} className=" px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <div  className=" px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a
                   href="#"
                   className="font-Montserrat font-bold hover:bg-cyan-700 text-white block px-3 py-2 rounded-md text-base"
