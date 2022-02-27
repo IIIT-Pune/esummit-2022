@@ -5,6 +5,10 @@
   padding: 0px !important;
 }
 
+.navbar-brand:hover {
+  color: aqua;
+}
+
 .navbar {
   /* border-bottom: 1px solid #BBBBBB; */
 }
@@ -25,7 +29,7 @@
 
 .nav-link:hover {
   opacity: 1;
-  color: #031d44;
+  color: aqua;
   /* color: aqua; */
 }
 
@@ -34,7 +38,7 @@
   height: 5px;
   content: "";
   position: absolute;
-  background-color: #031d44;
+  background-color: aqua;
 }
 
 .nav-link-ltr::before {
