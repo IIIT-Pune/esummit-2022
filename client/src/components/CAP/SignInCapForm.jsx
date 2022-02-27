@@ -29,7 +29,7 @@ const SignInCapForm = (props) => {
             <div className="mb-4">
               {/* <label className="block">Email</label> */}
               <input
-                className="shadow border rounded w-full bg-slate-200 px-3 py-2"
+                className="shadow border-2 border-gray-400 rounded w-full bg-slate-200 px-3 py-2"
                 type=""
                 placeholder="Email"
                 id="email"
@@ -46,7 +46,7 @@ const SignInCapForm = (props) => {
             <div className="mb-4">
               {/* <label className="block">Password</label> */}
               <input
-                className="shadow border rounded w-full bg-slate-200 px-3 py-2"
+                className="shadow border-2 border-gray-400 rounded w-full bg-slate-200 px-3 py-2"
                 type="password"
                 placeholder="Password"
                 id="password"
