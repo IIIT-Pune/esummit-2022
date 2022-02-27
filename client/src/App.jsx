@@ -12,8 +12,6 @@ import EventCard from "./components/events/EventCard";
 function App() {
 	return (
 		<>
-		
-
 			<Routes>
 				<Route
 					path="/"
@@ -33,6 +31,13 @@ function App() {
 					element={
 						<div className="py-9 px-4">
 							<Cap />
+						</div>
+					}
+				/>
+				<Route
+					path="leaderboard"
+					element={
+						<div className="py-9 px-4">
 							<Dashboard />
 						</div>
 					}
