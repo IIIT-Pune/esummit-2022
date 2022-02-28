@@ -9,7 +9,7 @@ const About = () => {
           <span className="font-bold text-cyan-400 text-5xl">E-SUMMIT </span>
         </div>
         <div className="relative w-60vw h-80 pt-10">
-          <p className="text-justify pr-10 pl-10">
+          <p className="text-justify text-2xl pr-20 pl-20">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis
             quisque eu phasellus cum. Morbi nec massa convallis et risus diam,
             aliquam. Gravida scelerisque quisque donec aliquam enim ultrices
@@ -18,7 +18,7 @@ const About = () => {
             nulla enim, porta metus turpis quam sed nulla. Lorem eros, egestas
             volutpat neque, tempor adipiscing magna. Dui tellus.
           </p>
-          <h1 className="absolute text-cyan-400 font-bold text-9xl opacity-50 right-10 bottom-0">22</h1>
+          <h1 className="absolute text-cyan-400 font-bold text-9xl opacity-50 right-20 bottom-0">22</h1>
         </div>
       </div>
     </>

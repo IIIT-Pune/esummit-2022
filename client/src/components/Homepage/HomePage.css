@@ -31,7 +31,7 @@ body {
   font-family: heading;
   position: relative;
   color: white;
-  font-size: 80px;
+  font-size: 5rem;
   z-index: 5;
 }
 #text::after {
@@ -40,16 +40,50 @@ body {
   color: aqua;
 }
 #text::before {
-  /* content: "Making Impossible Inevitable"; */
+  content: "MAKING IMPOSSIBLE INEVITABLE";
   z-index: 5;
   right: 0%;
   bottom: 0%;
-  font-size: 19px;
+  font-size: 1rem;
   position: absolute;
   color: aqua;
   font-family: "Montserrat", sans-serif;
 }
+.dance {
+  animation: bounce 3s infinite linear;
+}
+@keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  70% {
+    transform: translateY(-5px);
+  }
+  90% {
+    transform: translateY(-2.5px);
+  }
+}
 
+.move {
+  animation: moves 3s infinite linear;
+}
+@keyframes moves {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-2.5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 .shine {
   mix-blend-mode: screen;
   bottom: 0%;
@@ -85,6 +119,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   z-index: 5;
   font-size: 12px;
   width: 30%;
@@ -95,25 +130,43 @@ body {
   text-align: center;
   font-weight: bold;
   padding-top: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Day,
+.Hour,
+.Minute,
+.Second {
+  margin-top: 1vh;
+  background-color: aqua;
+  color: black;
+  border-radius: 2px;
+  width: 3vw;
 }
 .day-time,
 .hour-time,
 .minute-time,
 .second-time {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: black;
-  width: 30px;
-  height: 30px;
-  font-size: 15px;
+  color: aqua;
+  height: 6vh;
+  font-size: 2rem;
   border: solid aqua 1px;
   border-radius: 2px;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1300px) {
+  #text {
+    font-size: 6rem;
+  }
+  #text::before {
+    font-size: 1.2rem;
+  }
   #countdown {
     width: 20%;
+    padding-left: 30px;
   }
   .globe {
     bottom: 0%;
@@ -134,7 +187,34 @@ body {
   .shine {
     height: 70vh;
     width: 100vw;
-    /* transform: translateY(-30%); */
+    /* transform: translateY(%); */
+  }
+}
+@media (max-width: 1300px) and (min-width: 1100px) {
+  #countdown {
+    width: 20%;
+    padding-left: 30px;
+  }
+  .globe {
+    bottom: 0%;
+    height: 75vh;
+    width: 100vw;
+    z-index: 2;
+    position: absolute;
+  }
+  .lines {
+    object-fit: contain;
+    bottom: 0%;
+    height: 90%;
+    width: 100%;
+    z-index: 3;
+    position: absolute;
+    mix-blend-mode: color-dodge;
+  }
+  .shine {
+    height: 70vh;
+    width: 100vw;
+    transform: translateY(-3%);
   }
 }
 
@@ -146,11 +226,11 @@ body {
     width: 23%;
   }
   #text {
-    font-size: 75px;
+    font-size: 5rem;
   }
-  /* #text::before {
-    font-size: 18px;
-  } */
+  #text::before {
+    font-size: 1rem;
+  }
   .globe {
     bottom: 0%;
     height: 70vh;
@@ -170,7 +250,7 @@ body {
   .shine {
     height: 70vh;
     width: 100vw;
-    /* transform: translateY(-30%); */
+    transform: translateY(3%);
   }
 }
 @media (max-width: 900px) and (min-width: 750px) {
@@ -179,10 +259,10 @@ body {
   }
 
   #text {
-    font-size: 70px;
+    font-size: 4.2rem;
   }
   #text::before {
-    font-size: 16px;
+    font-size: 0.85rem;
   }
   .globe {
     bottom: 0%;
@@ -203,7 +283,7 @@ body {
   .shine {
     height: 70vh;
     width: 100vw;
-    /* transform: translateY(-28%); */
+    transform: translateY(7%);
   }
 }
 
@@ -212,10 +292,10 @@ body {
     transform: translateY(30vh);
   }
   #text {
-    font-size: 65px;
+    font-size: 3.7rem;
   }
   #text::before {
-    font-size: 15px;
+    font-size: 0.75rem;
   }
   .globe {
     bottom: 0%;
@@ -235,24 +315,24 @@ body {
   .shine {
     height: 70vh;
     width: 100vw;
-    transform: translateY(5%);
+    transform: translateY(7%);
   }
 }
 @media (max-width: 600px) {
   #btndiv {
-    transform: translateY(35vh);
+    transform: translateY(40vh);
   }
   #animate {
-    transform: translateY(30vh);
+    transform: translateY(35vh);
   }
   #countdown {
     width: 50%;
   }
   #text {
-    font-size: 35px;
+    font-size: 2.3rem;
   }
   #text::before {
-    font-size: 9px;
+    font-size: 0.46rem;
   }
   .globe {
     bottom: 0%;
@@ -273,6 +353,6 @@ body {
     bottom: 0%;
     height: 50vh;
     width: 100vw;
-    transform: translateY(75%);
+    transform: translateY(78%);
   }
 }

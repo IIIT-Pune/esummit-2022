@@ -14,26 +14,34 @@ export default function Homepage() {
       const currentScrollY = window.scrollY;
       if (preScrollY.current < currentScrollY && goingUp) {
         setgoingUp(false);
+        // text.classList.add('dance');
       }
       if (preScrollY.current < currentScrollY && !goingUp) {
         setgoingUp(true);
+        // text.classList.remove('dance');
       }
       preScrollY.current = currentScrollY;
       let value = window.scrollY;
-      animate.style.top = value * 3 + "px";
+      animate.style.top = value * 2.5 + "px";
       animate.style.opacity = 1 - value / 50;
       animate.style.zIndex = 1;
       // animate.style.transitionTimingFunction = "ease-in-out";
       animate.style.transition = "0.7s";
-      value>0?btn.style.visibility = "hidden":btn.style.visibility = "visible";
+      value > 0 ? btn.style.visibility = "hidden" : btn.style.visibility = "visible";
+      
+      value>0? text.classList.remove('dance'):text.classList.add('dance');
     };
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [goingUp]);
+  let animate = document.getElementById("animate");
+  let text = document.getElementById("text");
+  let btn = document.getElementById("btn");
+  window.addEventListener("scroll", function () { });
 
   const countdown = () => {
-    const countDate = new Date("March 28, 2022 00:00:00").getTime();
+    const countDate = new Date("March 28, 2022 :00:00").getTime();
     console.log(countDate);
     const now = new Date().getTime();
     const gap = countDate - now;
@@ -48,21 +56,28 @@ export default function Homepage() {
     const textMinute = Math.floor((gap % hour) / minute);
     const textSecond = Math.floor((gap % minute) / second);
 
-    document.querySelector(".day-time").innerText = textDay;
+    if (gap < 0) {
+      clearInterval();
+    }
+    else {
+      document.querySelector(".day-time").innerText = textDay;
     document.querySelector(".hour-time").innerText = textHour;
     document.querySelector(".minute-time").innerText = textMinute;
     document.querySelector(".second-time").innerText = textSecond;
+    }
   };
-  setInterval(countdown, 1000);
-  let animate = document.getElementById("animate");
-  let btn = document.getElementById("btn");
-  window.addEventListener("scroll", function () { });
+  useEffect(() => {
+    setInterval(countdown, 1000);
+    return () => {
+      clearInterval()
+    };
+  })
   
   return (
     <div className="Main">
       <div id="animate">
         <div id="banner">
-          <span id="text">E-SUMMIT</span>
+          <span id="text" className="dance">E-SUMMIT</span>
         </div>
       </div>
       <div id='btndiv'>
@@ -92,10 +107,10 @@ export default function Homepage() {
                 </button> */}
         </div>
       <div className="images">
-        <img className="lines" src={linesanddots} alt="linesanddots" />
+        <img className="lines " src={linesanddots} alt="linesanddots" />
         <img className="globe" src={globe} alt="globe" />
         <img className="shine" src={shine} alt="Shine" />
-        <img className="chatbot" src={chatbot} alt="Chatbot" />
+        {/* <img className="chatbot" src={chatbot} alt="Chatbot" /> */}
       </div>
     </div>
   );
