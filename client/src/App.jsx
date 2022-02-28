@@ -23,7 +23,7 @@ function App() {
               <Homepage />
               <About />
               <EventSection />
-              {/* <Speakers /> */}
+              <Speakers />
             </div>
           }
         />
@@ -32,6 +32,7 @@ function App() {
           element={
             <div>
               <NavBar />
+              {/* Dummy Event */}
               <EventCard
                 whiteText={"AD"}
                 blueText={"MAD"}
