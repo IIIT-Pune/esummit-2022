@@ -4,19 +4,48 @@ import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faGooglePlus } from "@fortawesome/free-brands-svg-icons";
 import ButtonCmp from "./ButtonCmp";
 import { useState } from "react";
+import axios from "axios";
+import baseUrl from "../../baseUrl";
+import { useNavigate } from "react-router-dom";
 
 const SignInCapForm = (props) => {
   const [formData, setformData] = useState({
-    name: "",
     email: "",
     password: "",
-    confirmPassword: "",
   });
-
+	const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
-  };
+   	let flag = 1;
+		Object.values(formData).map((obj) => {
+			if (obj === "") {
+				flag = 0;
+			}
+		});
+		if (flag === 0) {
+			alert("Please Fill the form");
+			return;
+		}
+    axios
+			.post(`${baseUrl}api/auth/login`, {
+				email: formData.email,
+				password: formData.password,
+			})
+			.then((res) => {
+				const data = res.data;
+				if (data.error) {
+					alert(data.error);
+				}
+				if (data.success) {
+					localStorage.setItem("token", JSON.stringify(data.authtoken));
+					navigate("/leaderboard");
+				}
+				// console.log(res.data);
+			})
+			.catch((err) => {
+				console.log(err);
+			});
+  }
 
   return (
     <>
