@@ -55,10 +55,10 @@
   }
   .events-modal-container{
       padding: 20px;
-      display: flex;
+      /* display: flex; */;
       justify-content: space-evenly;
-      height:50vh;
-      width:40vw;
+      /* height:50vh; */
+      /* width:40vw; */
       position: relative;
       margin:auto;
       top:25%;
