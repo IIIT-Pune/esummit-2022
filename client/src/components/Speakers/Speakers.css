@@ -1,88 +1,96 @@
-
 .headtx{
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 900;
-    font-size: 72px;
-    line-height: 88px;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 80px;
     display: flex;
     justify-content: center;
     color: #ffff;
 }
 .card{
-    width: 303px;
-    height: 407px;
+    width: 280px;
+    height: 376.068px;
     background: #000A0C;
     border: 4px solid #68D4E8;
     box-sizing: border-box;
-    box-shadow: 0px 0px 100px rgba(104, 212, 232, 0.8);
     border-radius: 9px;
+}
+.card:hover{
+    box-shadow: 0px 0px 100px rgba(104, 212, 232, 0.8);
+    transform: translateY(-25px);
+    transition-duration: 800ms;
+    background-image: linear-gradient(90deg,#08c5ff3a,#08c5ff3a);
 }
 .tbc{
     position: absolute;
-    width: 295px;
-    height: 113px;
+    width: 272.58px;
+    height: 105px;
     left: 0px;
     top: 0px;
     background: #68D4E8;
 }
 .linked{
     position: absolute;
-    left: 132.71px;
-    top: 225.71px;
+    left: 122.62404px;
+    top: 208.55604px;
 }
 .name{
     position: absolute;
-    width: 190px;
-    height: 29px;
-    left: 57px;
-    top: 276px;
+    width: 175.56px;
+    height: 26.796px;
+    left: 52.668px;
+    top: 255.024px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 900;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 22.176px;
+    line-height: 26.796px;
     display: flex;
     align-items: center;
     color: #68D4E8;
 }
 .details{
     position: absolute;
-    width: 88px;
-    height: 29px;
-    left: 108px;
-    top: 314px;
+    width: 81.312px;
+    height: 26.796px;
+    left: 99.792px;
+    top: 290.136px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 22.176px;
+    line-height: 26.796px;
     display: flex;
     align-items: center;
     color: #FFFFFF;
 }
 .date{
     position: absolute;
-    width: 190px;
-    height: 29px;
-    left: 60px;
-    top: 348px;
+    width: 175.56px;
+    height: 26.796px;
+    left: 55.44px;
+    top: 321.552px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 22.176px;
+    line-height: 26.796px;
     display: flex;
     align-items: center;
     color: #FFFFFF;
 }
 .pic{
     position: absolute;
-    width: 153px;
-    height: 153px;
-    left: 75px;
-    top: 57px;
+    width: 141.372px;
+    height: 141.372px;
+    left: 66.528px;
+    top: 52.668px;
     border-radius: 100px;
     border: 6px solid #000A0C;
     box-sizing: border-box;
+}
+.sp{
+    background-color:#000A0C;
+    height: 20px;
 }

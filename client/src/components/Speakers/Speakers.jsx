@@ -6,13 +6,14 @@ const Pict =
 
 function Speakers() {
 	return (
-		<div className="bg-black">
+		<div className="bk" style={{backgroundColor:'#000A0C'}}>
 			<div className="container">
 				<div className="headtx">
-					SPEAKER <span style={{ color: "#68D4E8" }}>SESSIONS</span>
+					<span style={{ color: "#ffff", fontSize:'60px', marginRight:'20px', fontWeight:'normal'}}>SPEAKER </span>
+					<span style={{ color: "#68D4E8", fontSize:'60px', fontWeight:'normal' }}>SESSIONS</span>
 				</div>
 			</div>
-			<div className="container">
+			<div className="container" style={{ marginBottom: "50px", paddingLeft:'60px' }}>
 				<div className="row" style={{ marginTop: "114px" }}>
 					<div className="col-md-4">
 						<SpeakerCard
@@ -45,7 +46,7 @@ function Speakers() {
 				<div className="row"></div>
 				<div
 					className="row"
-					style={{ marginTop: "120px", marginBottom: "50px" }}
+					style={{ marginTop: "120px"}}
 				>
 					<div className="col-md-4">
 						<SpeakerCard
@@ -76,6 +77,7 @@ function Speakers() {
 					</div>
 				</div>
 			</div>
+			<div className='sp'></div>
 		</div>
 	);
 }
