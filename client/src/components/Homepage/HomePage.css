@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 
 body {
   font-size: 100%;
@@ -19,7 +19,7 @@ body {
 }
 #animate {
   position: relative;
-  transform: translateY(10vh);
+  transform: translateY(25vh);
 }
 #banner {
   display: flex;
@@ -40,7 +40,7 @@ body {
   color: aqua;
 }
 #text::before {
-  content: "Making Impossible Inevitable";
+  /* content: "Making Impossible Inevitable"; */
   z-index: 5;
   right: 0%;
   bottom: 0%;
@@ -52,6 +52,7 @@ body {
 
 .shine {
   mix-blend-mode: screen;
+  bottom: 0%;
 }
 
 .images {
@@ -75,7 +76,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateY(30vh);
+  transform: translateY(60vh);
   z-index: 5;
 }
 
@@ -92,6 +93,7 @@ body {
 .count {
   width: 25px;
   text-align: center;
+  font-weight: bold;
   padding-top: 2vw;
 }
 .day-time,
@@ -132,13 +134,13 @@ body {
   .shine {
     height: 70vh;
     width: 100vw;
-    transform: translateY(-30%);
+    /* transform: translateY(-30%); */
   }
 }
 
 @media (max-width: 1100px) and (min-width: 900px) {
   #animate {
-    transform: translateY(12vh);
+    transform: translateY(30vh);
   }
   #countdown {
     width: 23%;
@@ -146,9 +148,9 @@ body {
   #text {
     font-size: 75px;
   }
-  #text::before {
+  /* #text::before {
     font-size: 18px;
-  }
+  } */
   .globe {
     bottom: 0%;
     height: 70vh;
@@ -168,12 +170,12 @@ body {
   .shine {
     height: 70vh;
     width: 100vw;
-    transform: translateY(-30%);
+    /* transform: translateY(-30%); */
   }
 }
 @media (max-width: 900px) and (min-width: 750px) {
   #animate {
-    transform: translateY(15vh);
+    transform: translateY(30vh);
   }
 
   #text {
@@ -201,13 +203,13 @@ body {
   .shine {
     height: 70vh;
     width: 100vw;
-    transform: translateY(-28%);
+    /* transform: translateY(-28%); */
   }
 }
 
 @media (max-width: 750px) and (min-width: 600px) {
   #animate {
-    transform: translateY(15vh);
+    transform: translateY(30vh);
   }
   #text {
     font-size: 65px;
@@ -233,21 +235,21 @@ body {
   .shine {
     height: 70vh;
     width: 100vw;
-    transform: translateY(-23%);
+    transform: translateY(5%);
   }
 }
 @media (max-width: 600px) {
   #btndiv {
-    transform: translateY(20vh);
+    transform: translateY(35vh);
   }
   #animate {
-    transform: translateY(15vh);
+    transform: translateY(30vh);
   }
   #countdown {
     width: 50%;
   }
   #text {
-    font-size: 40px;
+    font-size: 35px;
   }
   #text::before {
     font-size: 9px;
@@ -269,8 +271,8 @@ body {
   }
   .shine {
     bottom: 0%;
-    height: 60vh;
+    height: 50vh;
     width: 100vw;
-    transform: translateY(17%);
+    transform: translateY(75%);
   }
 }
