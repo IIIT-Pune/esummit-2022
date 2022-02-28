@@ -63,7 +63,7 @@ export default function Homepage() {
   let text = document.getElementById("text");
   window.addEventListener("scroll", function () {});
   return (
-    <div className="overflow-hidden">
+    <div className="Main">
       <div id="animate">
         <div id="banner">
           <span id="text">E-SUMMIT</span>
