@@ -17,14 +17,14 @@ function NavBar() {
               </div>
               <div className="hidden md:block">
                 <div className="flex items-baseline space-x-8">
-                  <a href="#" className="nav-link nav-link-ltr ">
+                  <a href="/" className="nav-link nav-link-ltr ">
                     HOME
                   </a>
                   <a href="#" className="nav-link nav-link-ltr ">
                     TEAM
                   </a>
 
-                  <a href="#" className="nav-link nav-link-ltr">
+                  <a href="/#eventshelf" className="nav-link nav-link-ltr">
                     EVENTS
                   </a>
 
