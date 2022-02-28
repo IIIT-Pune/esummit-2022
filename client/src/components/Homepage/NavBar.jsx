@@ -28,7 +28,7 @@ function NavBar() {
                     EVENTS
                   </a>
 
-                  <a href="#" className="nav-link nav-link-ltr ">
+                  <a href="/#speakers" className="nav-link nav-link-ltr ">
                     SPEAKERS
                   </a>
 
