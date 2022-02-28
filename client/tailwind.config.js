@@ -10,6 +10,9 @@ module.exports = {
         vrbg: "url('src/assets/vrbg.png')",
         eventsbg: "url('src/assets/events-bg.png')",
       },
+      colors: {
+        footer: "#2c2c2c",
+      },
     },
   },
   // corePlugins: {

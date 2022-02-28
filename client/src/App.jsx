@@ -9,7 +9,7 @@ import { Route, Routes } from "react-router-dom";
 import Speakers from "./components/Speakers/Speakers";
 import EventCard from "./components/events/EventCard";
 import FaqSection from "./components/faqs/FaqSection";
-
+import Footer from "./components/Footer/Footer";
 // import img from "";
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
               <EventSection />
               <Speakers />
               <FaqSection />
+              <Footer />
             </div>
           }
         />
