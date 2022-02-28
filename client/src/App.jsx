@@ -8,6 +8,7 @@ import EventSection from "./components/events-shelf/Section";
 import { Route, Routes } from "react-router-dom";
 import Speakers from "./components/Speakers/Speakers";
 import EventCard from "./components/events/EventCard";
+import FaqSection from "./components/faqs/FaqSection";
 
 // import img from "";
 
@@ -24,6 +25,7 @@ function App() {
               <About />
               <EventSection />
               <Speakers />
+              <FaqSection />
             </div>
           }
         />
