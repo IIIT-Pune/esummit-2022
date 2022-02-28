@@ -9,53 +9,55 @@ import { Route, Routes } from "react-router-dom";
 import Speakers from "./components/Speakers/Speakers";
 import EventCard from "./components/events/EventCard";
 
+// import img from "";
+
 function App() {
-	return (
-		<>
-			<Routes>
-				<Route
-					path="/"
-					element={
-						<div className="">
-							<NavBar />
-							<Homepage />
-							<About />
-							<EventSection />
-							{/* <Speakers /> */}
-						</div>
-					}
-				/>
-				<Route path="event" element={<EventCard />} />
-				<Route
-					path="campus"
-					element={
-						<div className="py-9 px-4">
-							<Cap />
-						</div>
-					}
-				/>
-				<Route
-					path="leaderboard"
-					element={
-						<div className="py-9 px-4">
-							<Dashboard />
-						</div>
-					}
-				/>
-				<Route
-					path="*"
-					element={
-						<div className="">
-							<NavBar />
-							<Homepage />
-							<About />
-							<EventSection />
-						</div>
-					}
-				/>
-			</Routes>
-		</>
-	);
+  return (
+    <>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="">
+              <NavBar />
+              <Homepage />
+              <About />
+              <EventSection />
+              {/* <Speakers /> */}
+            </div>
+          }
+        />
+        <Route path="event" element={<EventCard />} />
+        <Route
+          path="campus"
+          element={
+            <div className="py-9 px-4 bg-vrbg bg-cover lg:h-screen">
+              <Cap />
+            </div>
+          }
+        />
+        <Route
+          path="leaderboard"
+          element={
+            <div className="py-9 px-4 bg-vrbg bg-cover">
+              <Dashboard />
+            </div>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <div className="">
+              <NavBar />
+              <Homepage />
+              <About />
+              <EventSection />
+            </div>
+          }
+        />
+      </Routes>
+    </>
+  );
 }
 
 export default App;
