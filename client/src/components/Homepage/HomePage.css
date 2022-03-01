@@ -164,13 +164,13 @@ body {
 .hover {
   font-size: 1.25rem;
 }
-a {
+/* a {
   padding-left: 5%;
 }
 .hover:hover {
   cursor: pointer;
-}
-img {
+} */
+.icons {
   width: 30px;
   height: 30px;
 }
@@ -233,7 +233,7 @@ img {
   .hover {
     font-size: 1.1rem;
   }
-  img {
+  .icons {
     width: 25px;
     height: 25px;
   }
@@ -273,7 +273,7 @@ img {
   .hover {
     font-size: 1rem;
   }
-  img {
+  .icons {
     width: 20px;
     height: 20px;
   }
@@ -324,7 +324,7 @@ img {
   .hover {
     font-size: 0.9rem;
   }
-  img {
+  .icons {
     width: 17px;
     height: 17px;
   }
@@ -379,7 +379,7 @@ img {
   .hover {
     font-size: 0.8rem;
   }
-  img {
+  .icons {
     width: 17px;
     height: 17px;
   }
@@ -436,7 +436,7 @@ img {
   .hover {
     font-size: 0.5rem;
   }
-  img {
+  .icons {
     width: 10px;
     height: 10px;
   }
