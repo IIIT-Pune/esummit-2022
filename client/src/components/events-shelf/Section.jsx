@@ -3,8 +3,7 @@ import "./events.css";
 import Modal from "./Modal";
 import Shelf from "./Shelf";
 import Book from "./Book";
-import {data, dummy} from "./data.js"
-
+import { data, dummy } from "./data.js";
 
 function EventSection({ children }) {
   const [showModal, setShowModal] = useState(false);

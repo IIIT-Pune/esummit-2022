@@ -43,7 +43,7 @@ function Modal({ details, clickHandler, show }) {
             <button
               className="text-black w-fit font-Poppins border-2 hover:bg-black border-black hover:text-white text-base font-semibold rounded-full m-2 p-2 px-7"
               onClick={() => {
-                window.location = knowmore;
+                window.location = "events" + knowmore;
               }}
             >
               Know More

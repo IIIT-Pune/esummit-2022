@@ -82,6 +82,15 @@ function App() {
 					}
 				/>
 				<Route
+					path="events/:event_name"
+					element={
+						<div>
+							<NavBar />
+							<EventCard />
+						</div>
+					}
+				/>
+				<Route
 					path="*"
 					element={
 						<div className="">

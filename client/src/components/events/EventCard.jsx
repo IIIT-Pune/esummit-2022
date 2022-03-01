@@ -2,20 +2,25 @@ import React from "react";
 import eventIcon from "../Images/events/icons/eventicon.png";
 import qrCode from "../Images/events/qr/d2c.png";
 import NavBar from "../Homepage/NavBar";
+import { useParams } from "react-router-dom";
+import Data from "./data";
 
 const EventCard = (props) => {
+  const { event_name } = useParams();
+  const data = Data.find((obj) => obj.name === event_name);
+
   return (
     <div className="bg-eventsbg bg-cover flex justify-center items-center lg:h-screen">
-      <div className="flex justify-center items-center m-10">
+      <div className="flex justify-center items-center my-10">
         <div className="flex h-fit text-white font-Montserrat font-medium bg-black bg-opacity-50 backdrop-blur lg:w-4/5 p-8 m-8">
           <div className="flex flex-col lg:flex-row justify-center w-full">
             <div className="lg:w-2/5 flex flex-col space-y-4 justify-center items-center text-center">
               <div>
                 <img src={eventIcon} alt="" />
               </div>
-              <div className="text-5xl font-bold">
-                {props.whiteText}{" "}
-                <span className="text-cyan-300">{props.blueText}</span>
+              <div className="text-4xl font-bold">
+                {data.whiteText}{" "}
+                <span className="text-cyan-300">{data.blueText}</span>
               </div>
               <img src={qrCode} alt="" />
               <button
@@ -29,10 +34,10 @@ const EventCard = (props) => {
               {/* right-col */}
               <div className="space-y-3">
                 <div className="tracking-wider">
-                  Team Size: {props.teamSize} Members
+                  Team Size: {data.teamSize} Members
                 </div>
                 <div className="tracking-wider">
-                  Cash Prizes upto INR {props.cashPrize}
+                  Cash Prizes upto INR {data.cashPrize}
                 </div>
                 {/* Rulebook Button */}
                 <div>
@@ -45,7 +50,7 @@ const EventCard = (props) => {
                 </div>
               </div>
               <div className="pt-2">
-                <div className="text-justify">{props.eventDescription}</div>
+                <div className="text-justify">{data.eventDescription}</div>
               </div>
             </div>
           </div>
@@ -54,5 +59,4 @@ const EventCard = (props) => {
     </div>
   );
 };
-
 export default EventCard;
