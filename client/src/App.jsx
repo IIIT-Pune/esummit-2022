@@ -51,7 +51,7 @@ function App() {
         <Route
           path="campus"
           element={
-            <div className="py-9 px-4 bg-vrbg bg-cover lg:h-screen">
+            <div className="flex justify-center items-center lg:h-screen bg-vrbg bg-cover">
               <Cap />
             </div>
           }
@@ -59,7 +59,7 @@ function App() {
         <Route
           path="leaderboard"
           element={
-            <div className="py-9 px-4 bg-vrbg bg-cover">
+            <div className="py-9 px-4 lg:h-screen  bg-vrbg bg-cover">
               <Dashboard />
             </div>
           }
