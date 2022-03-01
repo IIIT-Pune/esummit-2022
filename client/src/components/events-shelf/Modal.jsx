@@ -2,6 +2,7 @@ import eventIcon from "../Images/events/icons/madads.png";
 
 function Modal({ details, clickHandler, show }) {
   const { name, logolink, d2clink, description, knowmore } = details;
+  
   return (
     <div className={show ? "events-modal show" : "events-modal"}>
       <div className="events-modal-container font-bold flex justify-center items-center lg:w-1/2 w-3/4">
