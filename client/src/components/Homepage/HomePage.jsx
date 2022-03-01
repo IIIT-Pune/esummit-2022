@@ -46,7 +46,7 @@ export default function Homepage() {
 
   const countdown = () => {
     const countDate = new Date("March 28, 2022 :00:00").getTime();
-    console.log(countDate);
+    // console.log(countDate);
     const now = new Date().getTime();
     const gap = countDate - now;
 
@@ -100,21 +100,21 @@ export default function Homepage() {
       </div>
       <div id='btndiv'>
           <div id="countdown">
-            <div class="count">
-              <h3 class="Day day-time">00</h3>
-              <h3 class="Day">DAY</h3>
+            <div className="count">
+              <h3 className="Day day-time">00</h3>
+              <h3 className="Day">DAY</h3>
             </div>
-            <div class="count">
-              <h3 class="Hour hour-time">00</h3>
-              <h3 class="Hour">HOUR</h3>
+            <div className="count">
+              <h3 className="Hour hour-time">00</h3>
+              <h3 className="Hour">HOUR</h3>
             </div>
-            <div class="count">
-              <h3 class="Minute minute-time">00</h3>
-              <h3 class="Minute">MIN</h3>
+            <div className="count">
+              <h3 className="Minute minute-time">00</h3>
+              <h3 className="Minute">MIN</h3>
             </div>
-            <div class="count">
-              <h3 class="Second second-time">00</h3>
-              <h3 class="Second">SEC</h3>
+            <div className="count">
+              <h3 className="Second second-time">00</h3>
+              <h3 className="Second">SEC</h3>
             </div>
           </div>
         {/* <button
