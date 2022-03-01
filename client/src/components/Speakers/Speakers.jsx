@@ -38,7 +38,7 @@ function Speakers() {
             <span className="text-cyan-400"> SESSIONS </span>
           </div>
         </div>
-        <div className="ca" style={{ marginBottom: "50px" }}>
+        <div className="ca" style={{ marginBottom: "50px" , width:'80%', marginLeft:'10%'}}>
           <div
             className="row flex flex-col gap-y-8 items-center lg:flex-row justify-around"
             style={{ marginTop: "114px" }}

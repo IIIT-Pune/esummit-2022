@@ -7,6 +7,11 @@ const EmailSchema = new Schema({
 		required: true,
         unique:true
 	},
+	referalID:{
+        type: String,
+        required: true,
+        unique: true
+    }
 });
 const Email = mongoose.model("emails", EmailSchema);
 module.exports = Email;

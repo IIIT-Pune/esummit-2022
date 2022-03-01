@@ -14,12 +14,18 @@ const UserSchema = new Schema({
 	password: {
 		type: String,
 		required: true,
+		select: false
 	},
 
 	date: {
 		type: Date,
 		default: Date.now,
 	},
+	referalID:{
+        type: String,
+        required: true,
+        unique: true
+    }
 });
 const User = mongoose.model("user", UserSchema);
 module.exports = User;
