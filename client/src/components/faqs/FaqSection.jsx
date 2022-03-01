@@ -12,7 +12,7 @@ export default function FaqSection() {
         FAQ<span>S</span>
       </h1>
       {questions.map((question) => (
-        <SingleQuestion {...question} />
+        <SingleQuestion {...question} key={question.id}/>
       ))}
     </div>
   );
