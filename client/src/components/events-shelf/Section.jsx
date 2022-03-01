@@ -131,7 +131,7 @@ function EventSection({ children }) {
   const [modalDetails, setModalDetails] = useState(dummy);
 
   return (
-    <div className="events-page " id="eventshelf">
+    <div className="events-page bg-[#000A0C]" id="eventshelf">
       <section className="events-section p-4 m-12 sm:p-8">
         <Modal
           show={showModal}
