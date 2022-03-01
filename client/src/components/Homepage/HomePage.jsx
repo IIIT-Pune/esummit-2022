@@ -126,7 +126,6 @@ export default function Homepage() {
         <img className="lines " src={linesanddots} alt="linesanddots" />
         <img className="globe" src={globe} alt="globe" />
         <img className="shine" src={shine} alt="Shine" />
-        {/* <img className="chatbot" src={chatbot} alt="Chatbot" /> */}
       </div>
     </div>
   );

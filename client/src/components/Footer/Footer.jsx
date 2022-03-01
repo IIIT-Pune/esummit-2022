@@ -17,41 +17,41 @@ const Footer = () => {
           <a href="">
             <FontAwesomeIcon
               icon={faInstagram}
-              size="lg"
-              className="p-2 border-2 border-black rounded-full bg-cyan-400 hover:bg-cyan-500"
+              size="xl"
+              className="fa-fw p-2 py-2.5 border-2 border-black rounded-full bg-cyan-300 hover:bg-cyan-500"
             />
           </a>
           <a href="">
             <FontAwesomeIcon
               icon={faYoutube}
-              size="lg"
-              className="p-2 border-2 border-black rounded-full bg-cyan-400 hover:bg-cyan-500"
+              size="xl"
+              className="fa-fw p-2 py-2.5 border-2 border-black rounded-full bg-cyan-300 hover:bg-cyan-500"
             />
           </a>
           <a href="">
             <FontAwesomeIcon
               icon={faLinkedin}
-              size="lg"
-              className="p-2 border-2 border-black rounded-full bg-cyan-400 hover:bg-cyan-500"
+              size="xl"
+              className="fa-fw p-2 py-2.5 border-2 border-black rounded-full bg-cyan-300 hover:bg-cyan-500"
             />
           </a>
           <a href="">
             <FontAwesomeIcon
               icon={faEnvelope}
-              size="lg"
-              className="p-2 border-2 border-black rounded-full bg-cyan-300 hover:bg-cyan-500"
+              size="xl"
+              className="fa-fw p-2 py-2.5 border-2 border-black rounded-full bg-cyan-300 hover:bg-cyan-500"
             />
           </a>
           <a href="">
             <FontAwesomeIcon
               icon={faDiscord}
-              size="lg"
-              className="p-2 border-2 border-black rounded-full bg-cyan-300 hover:bg-cyan-500"
+              size="xl"
+              className="fa-fw p-2 py-2.5 border-2 border-black rounded-full bg-cyan-300 hover:bg-cyan-500"
             />
           </a>
         </div>
         <hr />
-        <div className="flex items-center justify-center font-bold">
+        <div className="flex items-center justify-center flex-nowrap font-bold">
           <div className="space-x-8">
             <a href="#" className="nav-link nav-link-ltr ">
               HOME

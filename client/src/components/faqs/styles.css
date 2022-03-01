@@ -25,7 +25,8 @@ body {
 
 .faq {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: space-around;
   border: 2px solid #68d4eb;
   color: white;
   padding: 6px;
@@ -36,15 +37,16 @@ body {
 }
 .faq:hover {
   transition-property: background-color;
-  transition-duration: 0.75s;
+  transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
   background-color: #68d4eb;
-  /* color: black; */
+  color: black;
 }
 .faqopen {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   border: 2px solid #68d4eb;
+  width: 100%;
   color: black;
   padding: 6px;
   margin: 10px;
