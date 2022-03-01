@@ -1,481 +1,481 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 
 body {
-  font-size: 100%;
+	font-size: 100%;
 }
 .Main {
-  background-image: url("../images/bg.png");
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-  top: 0%;
-  position: relative;
-  overflow: hidden;
-  z-index: 0;
+	background-image: url("../images/bg.png");
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	top: 0%;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
 }
 @font-face {
-  font-family: heading;
-  src: url("../fonts/METAG___.TTF");
+	font-family: heading;
+	src: url("../fonts/METAG___.TTF");
 }
 #animate {
-  z-index: 20;
-  position: relative;
-  transform: translateY(25vh);
+	z-index: 20;
+	position: relative;
+	transform: translateY(25vh);
 }
 #banner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
 }
 #text {
-  font-family: heading;
-  position: relative;
-  color: white;
-  font-size: 5rem;
-  z-index: 5;
+	font-family: heading;
+	position: relative;
+	color: white;
+	font-size: 5rem;
+	z-index: 5;
 }
 #text::after {
-  content: "'22";
-  z-index: 5;
-  color: aqua;
+	content: "'22";
+	z-index: 5;
+	color: aqua;
 }
 #text::before {
-  content: "MAKING IMPOSSIBLE INEVITABLE";
-  font-weight: bold;
-  z-index: 5;
-  right: 0%;
-  bottom: 0%;
-  font-size: 1rem;
-  position: absolute;
-  color: aqua;
-  font-family: "Montserrat", sans-serif;
+	content: "MAKING IMPOSSIBLE INEVITABLE";
+	font-weight: bold;
+	z-index: 5;
+	right: 0%;
+	bottom: 0%;
+	font-size: 1rem;
+	position: absolute;
+	color: aqua;
+	font-family: "Montserrat", sans-serif;
 }
 .dance {
-  animation: bounce 7s infinite linear;
+	animation: bounce 7s infinite linear;
 }
 @keyframes bounce {
-  20%,
-  50%,
-  80%,
-  to {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-5px);
-  }
-  70% {
-    transform: translateY(-4px);
-  }
-  90% {
-    transform: translateY(-2.5px);
-  }
+	20%,
+	50%,
+	80%,
+	to {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-5px);
+	}
+	70% {
+		transform: translateY(-4px);
+	}
+	90% {
+		transform: translateY(-2.5px);
+	}
 }
 
 .move {
-  animation: moves 3s infinite linear;
+	animation: moves 3s infinite linear;
 }
 @keyframes moves {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-2.5px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(-2.5px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
 }
 .shine {
-  mix-blend-mode: screen;
-  bottom: 0%;
-  position: absolute;
+	mix-blend-mode: screen;
+	bottom: 0%;
+	position: absolute;
 }
 
 .images {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  bottom: 0%;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	bottom: 0%;
 }
 #btndiv {
-  width: 100%;
-  bottom: 5%;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	width: 100%;
+	bottom: 5%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #countdown {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 5;
-  font-size: 0.8rem;
-  width: 30%;
-  color: aqua;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 5;
+	font-size: 0.8rem;
+	width: 30%;
+	color: aqua;
 }
 .count {
-  /* width: 13%; */
-  text-align: center;
-  font-weight: bold;
+	/* width: 13%; */
+	text-align: center;
+	font-weight: bold;
 }
 .Daytxt,
 .Hourtxt,
 .Minutetxt,
 .Secondtxt {
-  font-weight: bold;
-  font-size: 0.8rem;
-  padding: 0 2px;
-  width: 100%;
-  margin-top: 1vh;
-  background-color: aqua;
-  color: black;
-  border-radius: 2px;
+	font-weight: bold;
+	font-size: 0.8rem;
+	padding: 0 2px;
+	width: 100%;
+	margin-top: 1vh;
+	background-color: aqua;
+	color: black;
+	border-radius: 2px;
 }
 .day-time,
 .hour-time,
 .minute-time,
 .second-time {
-  background-color: black;
-  color: aqua;
-  width: 100%;
-  font-size: 2rem;
-  border: solid aqua 1px;
-  padding: 0 5px;
-  border-radius: 2px;
-  box-shadow: 0 0 10px aqua;
+	background-color: black;
+	color: aqua;
+	width: 100%;
+	font-size: 2rem;
+	border: solid aqua 1px;
+	padding: 0 5px;
+	border-radius: 2px;
+	box-shadow: 0 0 10px aqua;
 }
 
 #links {
-  display: flex;
-  flex-direction: row;
-  font-family: "Montserrat", sans-serif;
-  padding-right: 18%;
-  z-index: 10;
+	display: flex;
+	flex-direction: row;
+	font-family: "Montserrat", sans-serif;
+	padding-right: 18%;
+	z-index: 10;
 }
 .hov {
-  color: white;
-  font-size: 1.5rem;
-  padding-left: 5%;
+	color: white;
+	font-size: 1.5rem;
+	padding-left: 5%;
 }
 .icons {
-  width: 30px;
-  height: 30px;
+	width: 30px;
+	height: 30px;
 }
 #youtube,
 #discord,
 #reminder {
-  white-space: nowrap;
-  margin-right: 12%;
-  display: flex;
-  flex: row;
-  vertical-align: middle;
+	white-space: nowrap;
+	margin-right: 12%;
+	display: flex;
+	flex: row;
+	vertical-align: middle;
 }
 @media only screen and (min-width: 1300px) {
-  #text {
-    font-size: 6rem;
-  }
-  #text::before {
-    font-size: 1.2rem;
-  }
-  #countdown {
-    width: 25%;
-    padding-left: 30px;
-  }
-  .globe {
-    bottom: 0%;
-    height: 75vh;
-    width: 100vw;
-    z-index: 2;
-    position: absolute;
-  }
-  .lines {
-    object-fit: contain;
-    bottom: 0%;
-    height: 90%;
-    width: 100%;
-    z-index: 3;
-    position: absolute;
-    mix-blend-mode: color-dodge;
-  }
-  .shine {
-    height: 75vh;
-    width: 100vw;
-  }
+	#text {
+		font-size: 6rem;
+	}
+	#text::before {
+		font-size: 1.2rem;
+	}
+	#countdown {
+		width: 25%;
+		padding-left: 30px;
+	}
+	.globe {
+		bottom: 0%;
+		height: 75vh;
+		width: 100vw;
+		z-index: 2;
+		position: absolute;
+	}
+	.lines {
+		object-fit: contain;
+		bottom: 0%;
+		height: 90%;
+		width: 100%;
+		z-index: 3;
+		position: absolute;
+		mix-blend-mode: color-dodge;
+	}
+	.shine {
+		height: 75vh;
+		width: 100vw;
+	}
 }
 @media (max-width: 1300px) and (min-width: 1100px) {
-  #countdown {
-    width: 20%;
-    padding-left: 30px;
-  }
-  .day-time,
-  .hour-time,
-  .minute-time,
-  .second-time {
-    font-size: 1.5rem;
-  }
-  #links {
-    padding-right: 16%;
-  }
-  .hov {
-    font-size: 1.1rem;
-  }
-  .icons {
-    width: 25px;
-    height: 25px;
-  }
-  .globe {
-    bottom: 0%;
-    height: 75vh;
-    width: 100vw;
-    z-index: 2;
-    position: absolute;
-  }
-  .lines {
-    object-fit: contain;
-    bottom: 0%;
-    height: 90%;
-    width: 100%;
-    z-index: 3;
-    position: absolute;
-    mix-blend-mode: color-dodge;
-  }
-  .shine {
-    height: 75vh;
-    width: 100vw;
-  }
+	#countdown {
+		width: 20%;
+		padding-left: 30px;
+	}
+	.day-time,
+	.hour-time,
+	.minute-time,
+	.second-time {
+		font-size: 1.5rem;
+	}
+	#links {
+		padding-right: 16%;
+	}
+	.hov {
+		font-size: 1.1rem;
+	}
+	.icons {
+		width: 25px;
+		height: 25px;
+	}
+	.globe {
+		bottom: 0%;
+		height: 75vh;
+		width: 100vw;
+		z-index: 2;
+		position: absolute;
+	}
+	.lines {
+		object-fit: contain;
+		bottom: 0%;
+		height: 90%;
+		width: 100%;
+		z-index: 3;
+		position: absolute;
+		mix-blend-mode: color-dodge;
+	}
+	.shine {
+		height: 75vh;
+		width: 100vw;
+	}
 }
 
 @media (max-width: 1100px) and (min-width: 900px) {
-  #animate {
-    transform: translateY(30vh);
-  }
-  #countdown {
-    width: 22%;
-    padding-left: 30px;
-  }
-  #links {
-    padding-right: 23%;
-  }
-  .hov {
-    font-size: 1rem;
-  }
-  .icons {
-    width: 20px;
-    height: 20px;
-  }
-  .day-time,
-  .hour-time,
-  .minute-time,
-  .second-time {
-    font-size: 1.25rem;
-  }
-  #text {
-    font-size: 5rem;
-  }
-  #text::before {
-    font-size: 1rem;
-  }
-  .globe {
-    bottom: 0%;
-    height: 70vh;
-    width: 100vw;
-    z-index: 2;
-    position: absolute;
-  }
-  .lines {
-    object-fit: contain;
-    height: 80vh;
-    width: 100vw;
-    z-index: 3;
-    bottom: 0%;
-    position: absolute;
-    mix-blend-mode: color-dodge;
-  }
-  .shine {
-    height: 70vh;
-    width: 100vw;
-  }
+	#animate {
+		transform: translateY(30vh);
+	}
+	#countdown {
+		width: 22%;
+		padding-left: 30px;
+	}
+	#links {
+		padding-right: 23%;
+	}
+	.hov {
+		font-size: 1rem;
+	}
+	.icons {
+		width: 20px;
+		height: 20px;
+	}
+	.day-time,
+	.hour-time,
+	.minute-time,
+	.second-time {
+		font-size: 1.25rem;
+	}
+	#text {
+		font-size: 5rem;
+	}
+	#text::before {
+		font-size: 1rem;
+	}
+	.globe {
+		bottom: 0%;
+		height: 70vh;
+		width: 100vw;
+		z-index: 2;
+		position: absolute;
+	}
+	.lines {
+		object-fit: contain;
+		height: 80vh;
+		width: 100vw;
+		z-index: 3;
+		bottom: 0%;
+		position: absolute;
+		mix-blend-mode: color-dodge;
+	}
+	.shine {
+		height: 70vh;
+		width: 100vw;
+	}
 }
 @media (max-width: 900px) and (min-width: 750px) {
-  #animate {
-    transform: translateY(30vh);
-  }
-  #coundtown {
-    width: 20%;
-  }
-  #links {
-    padding-right: 23%;
-  }
-  .hov {
-    font-size: 0.9rem;
-  }
-  .icons {
-    width: 17px;
-    height: 17px;
-  }
-  .day-time,
-  .hour-time,
-  .minute-time,
-  .second-time {
-    font-size: 1.25rem;
-  }
-  .Day,
-  .Hour,
-  .Minute,
-  .Second {
-    width: 5.2vw;
-  }
-  #text {
-    font-size: 4.2rem;
-  }
-  #text::before {
-    font-size: 0.825rem;
-  }
-  .globe {
-    bottom: 0%;
-    height: 70vh;
-    width: 100vw;
-    z-index: 2;
-    position: absolute;
-  }
-  .lines {
-    object-fit: contain;
-    bottom: 0%;
-    height: 75vh;
-    width: 100vw;
-    z-index: 3;
-    position: absolute;
-    mix-blend-mode: color-dodge;
-  }
-  .shine {
-    height: 70vh;
-    width: 100vw;
-  }
+	#animate {
+		transform: translateY(30vh);
+	}
+	#coundtown {
+		width: 20%;
+	}
+	#links {
+		padding-right: 23%;
+	}
+	.hov {
+		font-size: 0.9rem;
+	}
+	.icons {
+		width: 17px;
+		height: 17px;
+	}
+	.day-time,
+	.hour-time,
+	.minute-time,
+	.second-time {
+		font-size: 1.25rem;
+	}
+	.Day,
+	.Hour,
+	.Minute,
+	.Second {
+		width: 5.2vw;
+	}
+	#text {
+		font-size: 4.2rem;
+	}
+	#text::before {
+		font-size: 0.825rem;
+	}
+	.globe {
+		bottom: 0%;
+		height: 70vh;
+		width: 100vw;
+		z-index: 2;
+		position: absolute;
+	}
+	.lines {
+		object-fit: contain;
+		bottom: 0%;
+		height: 75vh;
+		width: 100vw;
+		z-index: 3;
+		position: absolute;
+		mix-blend-mode: color-dodge;
+	}
+	.shine {
+		height: 70vh;
+		width: 100vw;
+	}
 }
 
 @media (max-width: 750px) and (min-width: 600px) {
-  #animate {
-    transform: translateY(30vh);
-  }
-  #links {
-    padding-right: 22%;
-  }
-  .hov {
-    font-size: 0.8rem;
-  }
-  .icons {
-    width: 17px;
-    height: 17px;
-  }
-  .day-time,
-  .hour-time,
-  .minute-time,
-  .second-time {
-    font-size: 1.3rem;
-  }
-  .Day,
-  .Hour,
-  .Minute,
-  .Second {
-    width: 6vw;
-  }
+	#animate {
+		transform: translateY(30vh);
+	}
+	#links {
+		padding-right: 22%;
+	}
+	.hov {
+		font-size: 0.8rem;
+	}
+	.icons {
+		width: 17px;
+		height: 17px;
+	}
+	.day-time,
+	.hour-time,
+	.minute-time,
+	.second-time {
+		font-size: 1.3rem;
+	}
+	.Day,
+	.Hour,
+	.Minute,
+	.Second {
+		width: 6vw;
+	}
 
-  #text {
-    font-size: 3.7rem;
-  }
-  #text::before {
-    font-size: 0.72rem;
-  }
-  .globe {
-    bottom: 0%;
-    height: 65vh;
-    width: 100vw;
-    z-index: 2;
-    position: absolute;
-  }
-  .lines {
-    bottom: 0%;
-    height: 70vh;
-    width: 100vw;
-    z-index: 3;
-    position: absolute;
-    mix-blend-mode: color-dodge;
-  }
-  .shine {
-    height: 65vh;
-    width: 100vw;
-  }
+	#text {
+		font-size: 3.7rem;
+	}
+	#text::before {
+		font-size: 0.72rem;
+	}
+	.globe {
+		bottom: 0%;
+		height: 65vh;
+		width: 100vw;
+		z-index: 2;
+		position: absolute;
+	}
+	.lines {
+		bottom: 0%;
+		height: 70vh;
+		width: 100vw;
+		z-index: 3;
+		position: absolute;
+		mix-blend-mode: color-dodge;
+	}
+	.shine {
+		height: 65vh;
+		width: 100vw;
+	}
 }
 @media (max-width: 600px) {
-  #btndiv {
-    height: 90%;
-  }
-  #animate {
-    transform: translateY(35vh);
-  }
-  #countdown {
-    /* width: 15%; */
-    padding-left: 30px;
-  }
-  #links {
-    padding-right: 30%;
-  }
-  .hov {
-    font-size: 0.5rem;
-  }
-  .icons {
-    width: 10px;
-    height: 10px;
-  }
-  #countdown {
-    width: 50%;
-  }
-  .day-time,
-  .hour-time,
-  .minute-time,
-  .second-time {
-    font-size: 1rem;
-    box-shadow: 0 0 2px aqua;
-  }
-  .Daytxt,
-  .Hourtxt,
-  .Minutetxt,
-  .Secondtxt {
-    font-size: 0.7rem;
-    /* width: 7.8vw; */
-  }
-  #text {
-    font-size: 2.3rem;
-  }
-  #text::before {
-    font-size: 0.46rem;
-  }
-  .globe {
-    bottom: 0%;
-    height: 40vh;
-    width: 100vw;
-    z-index: 2;
-    position: absolute;
-  }
-  .lines {
-    position: absolute;
-    bottom: 0%;
-    height: 60vh;
-    width: 100vw;
-    z-index: 3;
-    mix-blend-mode: color-dodge;
-  }
-  .shine {
-    bottom: 0%;
-    height: 40vh;
-    width: 100vw;
-  }
+	#btndiv {
+		height: 90%;
+	}
+	#animate {
+		transform: translateY(35vh);
+	}
+	#countdown {
+		/* width: 15%; */
+		padding-left: 30px;
+	}
+	#links {
+		padding-right: 30%;
+	}
+	.hov {
+		font-size: 0.5rem;
+	}
+	.icons {
+		width: 10px;
+		height: 10px;
+	}
+	#countdown {
+		width: 50%;
+	}
+	.day-time,
+	.hour-time,
+	.minute-time,
+	.second-time {
+		font-size: 1rem;
+		box-shadow: 0 0 2px aqua;
+	}
+	.Daytxt,
+	.Hourtxt,
+	.Minutetxt,
+	.Secondtxt {
+		font-size: 0.7rem;
+		/* width: 7.8vw; */
+	}
+	#text {
+		font-size: 2.3rem;
+	}
+	#text::before {
+		font-size: 0.46rem;
+	}
+	.globe {
+		bottom: 0%;
+		height: 40vh;
+		width: 100vw;
+		z-index: 2;
+		position: absolute;
+	}
+	.lines {
+		position: absolute;
+		bottom: 0%;
+		height: 60vh;
+		width: 100vw;
+		z-index: 3;
+		mix-blend-mode: color-dodge;
+	}
+	.shine {
+		bottom: 0%;
+		height: 40vh;
+		width: 100vw;
+	}
 }

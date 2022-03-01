@@ -10,10 +10,26 @@ import Speakers from "./components/Speakers/Speakers";
 import EventCard from "./components/events/EventCard";
 import FaqSection from "./components/faqs/FaqSection";
 import Footer from "./components/Footer/Footer";
+import Loader from "./assets/loader.webp";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [showLoader, SetShowLoader] = useState(true);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      SetShowLoader(false);
+    }, 5000);
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
   return (
     <>
+      {showLoader && (
+        <div className="h-screen fixed w-full z-[999999] overflow-hidden flex items-center justify-center bg-[#050407] ">
+          <img src={Loader} autoPlay className="" />
+        </div>
+      )}
       <Routes>
         <Route
           path="/"

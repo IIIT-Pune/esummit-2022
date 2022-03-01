@@ -33,12 +33,13 @@ router.post('/createuser', [
     }
     const salt = await bcrypt.genSalt(10);
     const secPass = await bcrypt.hash(req.body.password, salt);
-
+    const referalID = userca.referal;
     // Create a new user
     user = await User.create({
       name: req.body.name,
       password: secPass,
       email: req.body.email,
+      referalID: referalID
     });
     const data = {
       user: {
@@ -48,7 +49,7 @@ router.post('/createuser', [
     const authtoken = jwt.sign(data, JWT_SECRET);
     // res.json(user)
     success = true;
-    res.status(200).send({success, authtoken })
+    res.status(200).send({success, authtoken, referalID })
 
   } catch (error) {
     console.error(error.message);
@@ -96,6 +97,33 @@ router.post('/login', [
     console.error(error.message);
     res.status(500).send("Internal Server Error");
   }
+
+  
+    // ROUTE 3: Get All the Notes using: GET "/api/auth/fetchalldata". Login required
+const fetchuser = (req, res, next) => {
+  // Get the user from the jwt token and add id to req object
+  const token = req.header('auth-token');
+  if (!token) {
+      res.status(401).send({ error: "Please authenticate using a valid token" })
+  }
+  try {
+      const data = jwt.verify(token, JWT_SECRET);
+      req.user = data.user;
+      next();
+  } catch (error) {
+      res.status(401).send({ error: "Please authenticate using a valid token" })
+  }
+
+}
+router.get('/fetchalldata', fetchuser, async (req, res) => {
+try {
+    const alldata = await User.find({ user: req.user.id });
+    res.json(alldata)
+} catch (error) {
+    console.error(error.message);
+    res.status(500).send("Internal Server Error");
+}
+})
 
 
 });
