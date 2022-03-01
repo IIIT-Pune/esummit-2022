@@ -35,7 +35,7 @@ const About = () => {
             opportunities to ideate and showcase the innovative potential of the
             youth.
           </p> */}
-          <h1 className="absolute text-cyan-400 font-bold text-9xl opacity-50 right-0 bottom-20">
+          <h1 className="absolute text-cyan-400 font-bold text-[12rem] opacity-50 right-0 bottom-0">
             22
           </h1>
         </div>

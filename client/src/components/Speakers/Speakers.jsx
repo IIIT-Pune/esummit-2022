@@ -33,7 +33,7 @@ function Speakers() {
               SESSIONS
             </span>
           </div> */}
-          <div className="text-center font-bold text-4xl md:text-6xl">
+          <div className="text-center font-bold text-4xl md:text-6xl font-Montserrat">
             <span className="text-white">SPEAKER </span>
             <span className="text-cyan-400"> SESSIONS </span>
           </div>

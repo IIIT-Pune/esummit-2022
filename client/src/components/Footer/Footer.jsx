@@ -12,7 +12,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <>
-      <div className="bg-footer p-4 flex flex-col justify-center items-center">
+      <div className="bg-black p-4 flex flex-col justify-center items-center">
         <div className="space-x-2 flex flex-row justify-center items-center p-4">
           <a href="">
             <FontAwesomeIcon
@@ -74,7 +74,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-cyan-300 p-2 font-Montserrat font-bold text-center">
+      <div className="bg-black p-3 font-Montserrat font-bold text-center text-cyan-400">
         © E-Cell IIIT Pune | All rights reserved
       </div>
     </>

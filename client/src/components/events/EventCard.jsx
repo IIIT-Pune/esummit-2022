@@ -10,7 +10,7 @@ const EventCard = (props) => {
   const data = Data.find((obj) => obj.name === event_name);
 
   return (
-    <div className="bg-eventsbg bg-cover flex justify-center items-center lg:h-screen">
+    <div className=" bg-eventsbg bg-cover flex justify-center items-center lg:h-screen">
       <div className="flex justify-center items-center my-10">
         <div className="flex h-fit text-white font-Montserrat font-medium bg-black bg-opacity-50 backdrop-blur lg:w-4/5 p-8 m-8">
           <div className="flex flex-col lg:flex-row justify-center w-full">

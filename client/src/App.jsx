@@ -22,10 +22,12 @@ function App() {
               <NavBar />
               <Homepage />
               <div className="bg-[#000A0C]">
-                <About />
-                <EventSection />
-                <Speakers />
-                <FaqSection />
+                <div className="py-14 space-y-24">
+                  <About />
+                  <EventSection />
+                  <Speakers />
+                  <FaqSection />
+                </div>
                 <Footer />
               </div>
             </div>
