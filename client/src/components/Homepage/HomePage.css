@@ -121,7 +121,7 @@ body {
   justify-content: space-around;
   align-items: center;
   z-index: 5;
-  font-size: 12px;
+  font-size: 0.8rem;
   width: 30%;
   color: aqua;
 }
@@ -129,11 +129,7 @@ body {
   width: 25px;
   text-align: center;
   font-weight: bold;
-  padding-top: 2vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* padding-top: 2vw; */
 }
 .Day,
 .Hour,
@@ -143,7 +139,7 @@ body {
   background-color: aqua;
   color: black;
   border-radius: 2px;
-  width: 3vw;
+  width: 4vw;
 }
 .day-time,
 .hour-time,
@@ -151,12 +147,42 @@ body {
 .second-time {
   background-color: black;
   color: aqua;
-  height: 6vh;
+  /* height: 6vh; */
   font-size: 2rem;
   border: solid aqua 1px;
   border-radius: 2px;
 }
 
+#links {
+  display: flex;
+  flex-direction: row;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  padding-right: 18%;
+  font-size: 1.2rem;
+}
+.hover {
+  font-size: 1.25rem;
+}
+a {
+  padding-left: 5%;
+}
+.hover:hover {
+  cursor: pointer;
+}
+img {
+  width: 30px;
+  height: 30px;
+}
+#youtube,
+#discord,
+#reminder {
+  white-space: nowrap;
+  margin-right: 12%;
+  display: flex;
+  flex: row;
+  vertical-align: middle;
+}
 @media only screen and (min-width: 1300px) {
   #text {
     font-size: 6rem;
@@ -187,13 +213,29 @@ body {
   .shine {
     height: 70vh;
     width: 100vw;
-    /* transform: translateY(%); */
+    transform: translateY(-5%);
   }
 }
 @media (max-width: 1300px) and (min-width: 1100px) {
   #countdown {
-    width: 20%;
+    width: 25%;
     padding-left: 30px;
+  }
+  .day-time,
+  .hour-time,
+  .minute-time,
+  .second-time {
+    font-size: 1.5rem;
+  }
+  #links {
+    padding-right: 16%;
+  }
+  .hover {
+    font-size: 1.1rem;
+  }
+  img {
+    width: 25px;
+    height: 25px;
   }
   .globe {
     bottom: 0%;
@@ -214,7 +256,7 @@ body {
   .shine {
     height: 70vh;
     width: 100vw;
-    transform: translateY(-3%);
+    transform: translateY(-2%);
   }
 }
 
@@ -224,6 +266,22 @@ body {
   }
   #countdown {
     width: 23%;
+  }
+  #links {
+    padding-right: 23%;
+  }
+  .hover {
+    font-size: 1rem;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  .day-time,
+  .hour-time,
+  .minute-time,
+  .second-time {
+    font-size: 1.25rem;
   }
   #text {
     font-size: 5rem;
@@ -250,14 +308,38 @@ body {
   .shine {
     height: 70vh;
     width: 100vw;
-    transform: translateY(3%);
+    transform: translateY(-2%);
   }
 }
 @media (max-width: 900px) and (min-width: 750px) {
   #animate {
     transform: translateY(30vh);
   }
-
+  #coundtown {
+    width: 20%;
+  }
+  #links {
+    padding-right: 23%;
+  }
+  .hover {
+    font-size: 0.9rem;
+  }
+  img {
+    width: 17px;
+    height: 17px;
+  }
+  .day-time,
+  .hour-time,
+  .minute-time,
+  .second-time {
+    font-size: 1.25rem;
+  }
+  .Day,
+  .Hour,
+  .Minute,
+  .Second {
+    width: 5.2vw;
+  }
   #text {
     font-size: 4.2rem;
   }
@@ -283,7 +365,7 @@ body {
   .shine {
     height: 70vh;
     width: 100vw;
-    transform: translateY(7%);
+    transform: translateY(2%);
   }
 }
 
@@ -291,6 +373,29 @@ body {
   #animate {
     transform: translateY(30vh);
   }
+  #links {
+    padding-right: 22%;
+  }
+  .hover {
+    font-size: 0.8rem;
+  }
+  img {
+    width: 17px;
+    height: 17px;
+  }
+  .day-time,
+  .hour-time,
+  .minute-time,
+  .second-time {
+    font-size: 1.3rem;
+  }
+  .Day,
+  .Hour,
+  .Minute,
+  .Second {
+    width: 6vw;
+  }
+
   #text {
     font-size: 3.7rem;
   }
@@ -315,7 +420,7 @@ body {
   .shine {
     height: 70vh;
     width: 100vw;
-    transform: translateY(7%);
+    transform: translateY(8%);
   }
 }
 @media (max-width: 600px) {
@@ -325,8 +430,30 @@ body {
   #animate {
     transform: translateY(35vh);
   }
+  #links {
+    padding-right: 30%;
+  }
+  .hover {
+    font-size: 0.5rem;
+  }
+  img {
+    width: 10px;
+    height: 10px;
+  }
   #countdown {
-    width: 50%;
+    width: 40%;
+  }
+  .day-time,
+  .hour-time,
+  .minute-time,
+  .second-time {
+    font-size: 1.3rem;
+  }
+  .Day,
+  .Hour,
+  .Minute,
+  .Second {
+    width: 7.8vw;
   }
   #text {
     font-size: 2.3rem;
@@ -353,6 +480,6 @@ body {
     bottom: 0%;
     height: 50vh;
     width: 100vw;
-    transform: translateY(78%);
+    transform: translateY(71%);
   }
 }

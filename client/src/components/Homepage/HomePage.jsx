@@ -5,6 +5,10 @@ import globe from "../images/dots.png";
 import shine from "../images/shine.png";
 import chatbot from "../images/Chatbot.png";
 import NavBar from "./NavBar";
+import discord from "../Images/discord.png";
+import calender from "../Images/calender.png";
+import play from "../Images/play.png";
+
 export default function Homepage() {
   const preScrollY = useRef(0);
   const [goingUp, setgoingUp] = useState(false);
@@ -77,6 +81,20 @@ export default function Homepage() {
     <div className="Main">
       <div id="animate">
         <div id="banner">
+          <div id='links' className="dance">
+            <div id='youtube'>
+              <img src={play} className="icons"/>
+              <a className='hover' src=''><span>Watch Teaser</span></a>
+            </div>
+            <div id='reminder'>
+              <img src={calender} className="icons"/>
+              <a className='hover' src=''><span>March 19</span></a>
+            </div>
+            <div id='discord'>
+              <img src={discord} className="icons"/>
+              <a className='hover' src=''><span>Join Discord</span></a>
+            </div>
+          </div>
           <span id="text" className="dance">E-SUMMIT</span>
         </div>
       </div>
@@ -84,19 +102,19 @@ export default function Homepage() {
           <div id="countdown">
             <div class="count">
               <h3 class="Day day-time">00</h3>
-              <h3 class="Day">Day</h3>
+              <h3 class="Day">DAY</h3>
             </div>
             <div class="count">
               <h3 class="Hour hour-time">00</h3>
-              <h3 class="Hour">Hour</h3>
+              <h3 class="Hour">HOUR</h3>
             </div>
             <div class="count">
               <h3 class="Minute minute-time">00</h3>
-              <h3 class="Minute">Min</h3>
+              <h3 class="Minute">MIN</h3>
             </div>
             <div class="count">
               <h3 class="Second second-time">00</h3>
-              <h3 class="Second">Sec</h3>
+              <h3 class="Second">SEC</h3>
             </div>
           </div>
         {/* <button
