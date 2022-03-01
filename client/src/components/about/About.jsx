@@ -3,22 +3,41 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="flex-row justify-center items-center w-100 h-screen bg-black text-white font-Montserra">
-        <div className="text-center">
-          <span className="font-bold text-5xl">ABOUT </span>
-          <span className="font-bold text-cyan-400 text-5xl">E-SUMMIT </span>
+      <div className="flex flex-col justify-center items-center space-y-8 m-4 my-14 p-4 sm:p-8 text-white font-Montserrat ">
+        <div className="text-center font-bold text-4xl md:text-6xl">
+          <span className="">ABOUT </span>
+          <span className="text-cyan-400"> E-SUMMIT </span>
         </div>
-        <div className="relative w-60vw h-80 pt-10">
-          <p className="text-justify text-2xl pr-20 pl-20">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis
-            quisque eu phasellus cum. Morbi nec massa convallis et risus diam,
-            aliquam. Gravida scelerisque quisque donec aliquam enim ultrices
-            pulvinar. Purus vitae eu id habitant velit. Erat dui, vel sed vel.
-            Mollis nunc sed facilisis sed vitae id sit euismod feugiat. Proin et
-            nulla enim, porta metus turpis quam sed nulla. Lorem eros, egestas
-            volutpat neque, tempor adipiscing magna. Dui tellus.
+        <div className="relative space-y-8 text-2xs md:text-2xl w-4/5">
+          <p className="text-justify">
+            E-Summit’22 is the largest entrepreneurship conclave ever by E-Cell,
+            IIIT Pune with the vision of Making Impossible Inevitable. A gamut
+            of exciting events, speaker sessions and workshops, E-Summit’22 is a
+            9-days long online event with the most incredible profusion of
+            entrepreneurship-related challenges to forefront innovation and
+            usher in new ideas.
           </p>
-          <h1 className="absolute text-cyan-400 font-bold text-9xl opacity-50 right-20 bottom-0">22</h1>
+          <p className="text-justify">
+            E-Summit’22 is the ultimate entrepreneurship summit of the year
+            converging towards the realm of future startups by reflecting Global
+            Financial Capitals in Metaverse. With Metaverse steering us closer
+            towards globalisation by eliminating the “where” factor in our
+            lives, the global financial capitals will soon find themselves
+            immersed in this world of virtual cohabitation and gun for top
+            talents worldwide without geographical concerns. E-Summit’22 wishes
+            to contribute to the Metaverse supremacy by providing equal
+            opportunities to everyone without worrying about the “where”.
+          </p>
+          {/* <p className="text-justify text-2xs">
+            E-Summit’22 is a visionary platform to help the community of
+            entrepreneurs boost their entrepreneurial temperament, elevate
+            existing entrepreneurial skills and establish new ones through
+            opportunities to ideate and showcase the innovative potential of the
+            youth.
+          </p> */}
+          <h1 className="absolute text-cyan-400 font-bold text-9xl opacity-50 right-0 bottom-20">
+            22
+          </h1>
         </div>
       </div>
     </>

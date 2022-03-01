@@ -8,8 +8,11 @@ function Speakers() {
   return (
     <div className="use-boostrap" id="speakers">
       <div className="bk" style={{ backgroundColor: "#000A0C" }}>
-        <div className="cont" style={{textAlign:'center', paddingTop:'20px'}}>
-          <div className="headtx">
+        <div
+          className="cont"
+          style={{ textAlign: "center", paddingTop: "20px" }}
+        >
+          {/* <div className="headtx">
             <span
               style={{
                 color: "#ffff",
@@ -29,12 +32,13 @@ function Speakers() {
             >
               SESSIONS
             </span>
+          </div> */}
+          <div className="text-center font-bold text-4xl md:text-6xl">
+            <span className="text-white">SPEAKER </span>
+            <span className="text-cyan-400"> SESSIONS </span>
           </div>
         </div>
-        <div
-          className="ca"
-          style={{ marginBottom: "50px"}}
-        >
+        <div className="ca" style={{ marginBottom: "50px" }}>
           <div
             className="row flex flex-col gap-y-8 items-center lg:flex-row justify-around"
             style={{ marginTop: "114px" }}

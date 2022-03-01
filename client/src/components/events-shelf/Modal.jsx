@@ -4,7 +4,7 @@ function Modal({ details, clickHandler, show }) {
   const { name, logolink, d2clink, description, knowmore } = details;
   return (
     <div className={show ? "events-modal show" : "events-modal"}>
-      <div className="events-modal-container font-bold flex justify-center items-center lg:w-1/2 md:w-3/4">
+      <div className="events-modal-container font-bold flex justify-center items-center lg:w-1/2 w-3/4">
         <span
           className="events-modal-close"
           onClick={() => {
@@ -13,10 +13,14 @@ function Modal({ details, clickHandler, show }) {
         >
           X
         </span>
-        <div className="flex flex-row justify-center items-center">
+        <div className="flex flex-col sm:flex-row justify-center items-center">
           <div className="events-modal-page1 flex flex-col justify-between items-center mx-4">
             <div>
-              <img src={eventIcon} alt="Minimal logo" />
+              <img
+                src={eventIcon}
+                alt="Minimal logo"
+                className="w-1/2 sm:w-full"
+              />
               {/* <img src={logolink} height="50%" width="20%" alt="Minimal logo" /> */}
             </div>
             <div>
@@ -31,7 +35,7 @@ function Modal({ details, clickHandler, show }) {
             </div>
           </div>
           <div className="events-modal-page2 flex flex-col justify-between items-center space-y-8 m-2">
-            <div className="text-xl text-center">{name}</div>
+            <div className="text-3xl font-black text-center">{name}</div>
             <div className="events-modal-description text-justify">
               {description}
             </div>

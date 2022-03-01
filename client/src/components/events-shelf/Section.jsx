@@ -131,8 +131,8 @@ function EventSection({ children }) {
   const [modalDetails, setModalDetails] = useState(dummy);
 
   return (
-    <div className="events-page" id="eventshelf">
-      <section className="events-section ">
+    <div className="events-page " id="eventshelf">
+      <section className="events-section p-4 m-12 sm:p-8">
         <Modal
           show={showModal}
           details={modalDetails}
@@ -140,9 +140,10 @@ function EventSection({ children }) {
             setShowModal(false);
           }}
         />
-        <h1 className="events-heading ml-10">
-          EVENTS’ <span className="events-heading-span">SHELF</span>
-        </h1>
+        <div className="text-center font-bold text-4xl md:text-6xl">
+          <span className="text-white">EVENTS' </span>
+          <span className="text-cyan-400"> SHELF </span>
+        </div>
         <Shelf>
           {data.map((details) => (
             <Book
