@@ -5,7 +5,7 @@ import "./NavBar.css";
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="absolute w-full">
+    <div className="absolute w-full z-10">
       <nav className="">
         <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between ">
