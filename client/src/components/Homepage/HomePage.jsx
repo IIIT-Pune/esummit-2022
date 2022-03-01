@@ -55,10 +55,14 @@ export default function Homepage() {
     const hour = minute * 60;
     const day = hour * 24;
 
-    const textDay = Math.floor(gap / day);
-    const textHour = Math.floor((gap % day) / hour);
-    const textMinute = Math.floor((gap % hour) / minute);
-    const textSecond = Math.floor((gap % minute) / second);
+    var textDay = Math.floor(gap / day);
+    textDay=textDay < 10 ? "0" + textDay : textDay;
+    var textHour = Math.floor((gap % day) / hour);
+    textHour=textHour < 10 ? "0" + textHour : textHour;
+    var textMinute = Math.floor((gap % hour) / minute);
+    textMinute=textMinute < 10 ? "0" + textMinute : textMinute;
+    var textSecond = Math.floor((gap % minute) / second);
+    textSecond=textSecond < 10 ? "0" + textSecond : textSecond;
 
     if (gap < 0) {
       clearInterval();

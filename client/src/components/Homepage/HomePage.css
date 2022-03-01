@@ -159,6 +159,7 @@ body {
   border: solid aqua 1px;
   padding: 0 5px;
   border-radius: 2px;
+  box-shadow: 0 0 10px aqua;
 }
 
 #links {
@@ -194,8 +195,8 @@ body {
     font-size: 1.2rem;
   }
   #countdown {
-    /* width: 20%; */
-    /* padding-left: 30px; */
+    width: 25%;
+    padding-left: 30px;
   }
   .globe {
     bottom: 0%;
@@ -219,10 +220,10 @@ body {
   }
 }
 @media (max-width: 1300px) and (min-width: 1100px) {
-  /* #countdown {
-    width: 25%;
+  #countdown {
+    width: 20%;
     padding-left: 30px;
-  } */
+  }
   .day-time,
   .hour-time,
   .minute-time,
@@ -266,7 +267,8 @@ body {
     transform: translateY(30vh);
   }
   #countdown {
-    /* width: 23%; */
+    width: 22%;
+    padding-left: 30px;
   }
   #links {
     padding-right: 23%;
@@ -428,6 +430,10 @@ body {
   #animate {
     transform: translateY(35vh);
   }
+  #countdown {
+    /* width: 15%; */
+    padding-left: 30px;
+  }
   #links {
     padding-right: 30%;
   }
@@ -446,6 +452,7 @@ body {
   .minute-time,
   .second-time {
     font-size: 1rem;
+    box-shadow: 0 0 2px aqua;
   }
   .Daytxt,
   .Hourtxt,
