@@ -11,12 +11,14 @@ body {
   top: 0%;
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 @font-face {
   font-family: heading;
   src: url("../fonts/METAG___.TTF");
 }
 #animate {
+  z-index: 20;
   position: relative;
   transform: translateY(25vh);
 }
