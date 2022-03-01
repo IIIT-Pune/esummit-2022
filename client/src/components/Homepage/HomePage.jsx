@@ -102,7 +102,7 @@ export default function Homepage() {
           <span id="text" className="dance">E-SUMMIT</span>
         </div>
       </div>
-      <div id='btndiv'>
+      <div id='btndiv' className="">
           <div id="countdown">
             <div className="count">
               <h3 className="Day day-time">00</h3>
@@ -122,7 +122,7 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-      <div className="images">
+      <div className="images ">
         <img className="lines " src={linesanddots} alt="linesanddots" />
         <img className="globe" src={globe} alt="globe" />
         <img className="shine" src={shine} alt="Shine" />
