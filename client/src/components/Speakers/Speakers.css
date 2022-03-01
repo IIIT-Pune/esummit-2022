@@ -4,7 +4,6 @@
     font-weight: 500;
     font-size: 60px;
     line-height: 80px;
-    display: flex;
     justify-content: center;
     color: #ffff;
 }
@@ -17,7 +16,7 @@
     border-radius: 9px;
 }
 .card:hover{
-    box-shadow: 0px 0px 100px rgba(104, 212, 232, 0.8);
+    box-shadow: 0px 0px 50px rgba(104, 212, 232, 0.8);
     transform: translateY(-25px);
     transition-duration: 800ms;
     background-image: linear-gradient(90deg,#08c5ff3a,#08c5ff3a);

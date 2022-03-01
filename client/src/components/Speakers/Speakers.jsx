@@ -8,7 +8,7 @@ function Speakers() {
   return (
     <div className="use-boostrap" id="speakers">
       <div className="bk" style={{ backgroundColor: "#000A0C" }}>
-        <div className="container">
+        <div className="cont" style={{textAlign:'center', paddingTop:'20px'}}>
           <div className="headtx">
             <span
               style={{
@@ -32,8 +32,8 @@ function Speakers() {
           </div>
         </div>
         <div
-          className="container"
-          style={{ marginBottom: "50px", paddingLeft: "60px" }}
+          className="ca"
+          style={{ marginBottom: "50px"}}
         >
           <div
             className="row flex flex-col gap-y-8 items-center lg:flex-row justify-around"
