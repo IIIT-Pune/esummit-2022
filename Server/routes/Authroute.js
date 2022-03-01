@@ -33,12 +33,13 @@ router.post('/createuser', [
     }
     const salt = await bcrypt.genSalt(10);
     const secPass = await bcrypt.hash(req.body.password, salt);
-
+    const referalID = userca.referal;
     // Create a new user
     user = await User.create({
       name: req.body.name,
       password: secPass,
       email: req.body.email,
+      referalID: referalID
     });
     const data = {
       user: {
@@ -48,7 +49,7 @@ router.post('/createuser', [
     const authtoken = jwt.sign(data, JWT_SECRET);
     // res.json(user)
     success = true;
-    res.status(200).send({success, authtoken })
+    res.status(200).send({success, authtoken, referalID })
 
   } catch (error) {
     console.error(error.message);
