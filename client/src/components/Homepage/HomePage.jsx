@@ -84,15 +84,15 @@ export default function Homepage() {
           <div id='links' className="dance">
             <div id='youtube'>
               <img src={play} className="icons"/>
-              <a className='hover' src=''><span>Watch Teaser</span></a>
+              <a className='hov' href=''><span>Watch Teaser</span></a>
             </div>
             <div id='reminder'>
               <img src={calender} className="icons"/>
-              <a className='hover' src=''><span>March 19</span></a>
+              <a className='hov' href=''><span>March 19</span></a>
             </div>
             <div id='discord'>
               <img src={discord} className="icons"/>
-              <a className='hover' src=''><span>Join Discord</span></a>
+              <a className='hov' href=''><span>Join Discord</span></a>
             </div>
           </div>
           <span id="text" className="dance">E-SUMMIT</span>
@@ -102,27 +102,21 @@ export default function Homepage() {
           <div id="countdown">
             <div className="count">
               <h3 className="Day day-time">00</h3>
-              <h3 className="Day">DAY</h3>
+              <h3 className="Daytxt">DAY</h3>
             </div>
             <div className="count">
               <h3 className="Hour hour-time">00</h3>
-              <h3 className="Hour">HOUR</h3>
+              <h3 className="Hourtxt">HR</h3>
             </div>
             <div className="count">
               <h3 className="Minute minute-time">00</h3>
-              <h3 className="Minute">MIN</h3>
+              <h3 className="Minutetxt">MIN</h3>
             </div>
             <div className="count">
               <h3 className="Second second-time">00</h3>
-              <h3 className="Second">SEC</h3>
+              <h3 className="Secondtxt">SEC</h3>
             </div>
           </div>
-        {/* <button
-                  type="submit" id='btn'
-                  className="text-white border-2 hover:bg-white border-white hover:text-black font-semibold rounded-full m-2 p-2 px-3"
-                >
-                  Join Discord
-                </button> */}
         </div>
       <div className="images">
         <img className="lines " src={linesanddots} alt="linesanddots" />

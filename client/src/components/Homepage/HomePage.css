@@ -10,7 +10,7 @@ body {
   width: 100%;
   top: 0%;
   z-index: -2;
-  /* position: absolute; */
+  position: relative;
   overflow: hidden;
 }
 @font-face {
@@ -41,6 +41,7 @@ body {
 }
 #text::before {
   content: "MAKING IMPOSSIBLE INEVITABLE";
+  font-weight: bold;
   z-index: 5;
   right: 0%;
   bottom: 0%;
@@ -87,12 +88,14 @@ body {
 .shine {
   mix-blend-mode: screen;
   bottom: 0%;
+  position: absolute;
 }
 
 .images {
   display: block;
   justify-content: center;
   align-items: center;
+  position: absolute;
   width: 100vw;
   height: 100vh;
   bottom: 0%;
@@ -106,16 +109,18 @@ body {
   z-index: 6;
 }
 #btndiv {
-  position: relative;
+  width: 100%;
+  height: 120%;
+  /* bottom: 0%; */
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateY(60vh);
   z-index: 5;
 }
 
 #countdown {
-  bottom: 0%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -126,20 +131,22 @@ body {
   color: aqua;
 }
 .count {
-  width: 25px;
+  /* width: 13%; */
   text-align: center;
   font-weight: bold;
-  /* padding-top: 2vw; */
 }
-.Day,
-.Hour,
-.Minute,
-.Second {
+.Daytxt,
+.Hourtxt,
+.Minutetxt,
+.Secondtxt {
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 0 2px;
+  width: 100%;
   margin-top: 1vh;
   background-color: aqua;
   color: black;
   border-radius: 2px;
-  width: 4vw;
 }
 .day-time,
 .hour-time,
@@ -147,9 +154,10 @@ body {
 .second-time {
   background-color: black;
   color: aqua;
-  /* height: 6vh; */
+  width: 100%;
   font-size: 2rem;
   border: solid aqua 1px;
+  padding: 0 5px;
   border-radius: 2px;
 }
 
@@ -157,19 +165,14 @@ body {
   display: flex;
   flex-direction: row;
   font-family: "Montserrat", sans-serif;
-  color: white;
   padding-right: 18%;
-  font-size: 1.2rem;
+  z-index: 10;
 }
-.hover {
-  font-size: 1.25rem;
-}
-/* a {
+.hov {
+  color: white;
+  font-size: 1.5rem;
   padding-left: 5%;
 }
-.hover:hover {
-  cursor: pointer;
-} */
 .icons {
   width: 30px;
   height: 30px;
@@ -191,8 +194,8 @@ body {
     font-size: 1.2rem;
   }
   #countdown {
-    width: 20%;
-    padding-left: 30px;
+    /* width: 20%; */
+    /* padding-left: 30px; */
   }
   .globe {
     bottom: 0%;
@@ -211,16 +214,15 @@ body {
     mix-blend-mode: color-dodge;
   }
   .shine {
-    height: 70vh;
+    height: 75vh;
     width: 100vw;
-    transform: translateY(-5%);
   }
 }
 @media (max-width: 1300px) and (min-width: 1100px) {
-  #countdown {
+  /* #countdown {
     width: 25%;
     padding-left: 30px;
-  }
+  } */
   .day-time,
   .hour-time,
   .minute-time,
@@ -230,7 +232,7 @@ body {
   #links {
     padding-right: 16%;
   }
-  .hover {
+  .hov {
     font-size: 1.1rem;
   }
   .icons {
@@ -254,9 +256,8 @@ body {
     mix-blend-mode: color-dodge;
   }
   .shine {
-    height: 70vh;
+    height: 75vh;
     width: 100vw;
-    transform: translateY(-2%);
   }
 }
 
@@ -265,12 +266,12 @@ body {
     transform: translateY(30vh);
   }
   #countdown {
-    width: 23%;
+    /* width: 23%; */
   }
   #links {
     padding-right: 23%;
   }
-  .hover {
+  .hov {
     font-size: 1rem;
   }
   .icons {
@@ -308,7 +309,6 @@ body {
   .shine {
     height: 70vh;
     width: 100vw;
-    transform: translateY(-2%);
   }
 }
 @media (max-width: 900px) and (min-width: 750px) {
@@ -321,7 +321,7 @@ body {
   #links {
     padding-right: 23%;
   }
-  .hover {
+  .hov {
     font-size: 0.9rem;
   }
   .icons {
@@ -344,7 +344,7 @@ body {
     font-size: 4.2rem;
   }
   #text::before {
-    font-size: 0.85rem;
+    font-size: 0.825rem;
   }
   .globe {
     bottom: 0%;
@@ -365,7 +365,6 @@ body {
   .shine {
     height: 70vh;
     width: 100vw;
-    transform: translateY(2%);
   }
 }
 
@@ -376,7 +375,7 @@ body {
   #links {
     padding-right: 22%;
   }
-  .hover {
+  .hov {
     font-size: 0.8rem;
   }
   .icons {
@@ -400,7 +399,7 @@ body {
     font-size: 3.7rem;
   }
   #text::before {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
   }
   .globe {
     bottom: 0%;
@@ -418,14 +417,13 @@ body {
     mix-blend-mode: color-dodge;
   }
   .shine {
-    height: 70vh;
+    height: 65vh;
     width: 100vw;
-    transform: translateY(8%);
   }
 }
 @media (max-width: 600px) {
   #btndiv {
-    transform: translateY(40vh);
+    height: 90%;
   }
   #animate {
     transform: translateY(35vh);
@@ -433,7 +431,7 @@ body {
   #links {
     padding-right: 30%;
   }
-  .hover {
+  .hov {
     font-size: 0.5rem;
   }
   .icons {
@@ -441,19 +439,20 @@ body {
     height: 10px;
   }
   #countdown {
-    width: 40%;
+    width: 50%;
   }
   .day-time,
   .hour-time,
   .minute-time,
   .second-time {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
-  .Day,
-  .Hour,
-  .Minute,
-  .Second {
-    width: 7.8vw;
+  .Daytxt,
+  .Hourtxt,
+  .Minutetxt,
+  .Secondtxt {
+    font-size: 0.7rem;
+    /* width: 7.8vw; */
   }
   #text {
     font-size: 2.3rem;
@@ -478,8 +477,7 @@ body {
   }
   .shine {
     bottom: 0%;
-    height: 50vh;
+    height: 40vh;
     width: 100vw;
-    transform: translateY(71%);
   }
 }
