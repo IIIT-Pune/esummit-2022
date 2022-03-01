@@ -22,11 +22,13 @@ function App() {
             <div className="">
               <NavBar />
               <Homepage />
-              <About />
-              <EventSection />
-              <Speakers />
-              <FaqSection />
-              <Footer />
+              <div className="bg-[#000A0C]">
+                <About />
+                <EventSection />
+                <Speakers />
+                <FaqSection />
+                <Footer />
+              </div>
             </div>
           }
         />
