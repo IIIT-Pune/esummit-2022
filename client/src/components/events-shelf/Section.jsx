@@ -43,7 +43,7 @@ const data = [
     d2clink: "",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta eu, neque eu sagittis, leo fames. Non non vitae eu sagittis orci, elementum amet semper. Urna nulla tristique eu sed. Id tellus.",
-    knowmore: "",
+    knowmore: "/cryptoclash",
   },
   {
     name: "FLAWLESS",

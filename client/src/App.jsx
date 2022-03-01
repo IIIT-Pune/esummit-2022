@@ -10,7 +10,6 @@ import Speakers from "./components/Speakers/Speakers";
 import EventCard from "./components/events/EventCard";
 import FaqSection from "./components/faqs/FaqSection";
 import Footer from "./components/Footer/Footer";
-// import img from "";
 
 function App() {
   return (
@@ -63,6 +62,15 @@ function App() {
           element={
             <div className="py-9 px-4 lg:h-screen  bg-vrbg bg-cover">
               <Dashboard />
+            </div>
+          }
+        />
+        <Route
+          path="events/:event_name"
+          element={
+            <div>
+              <NavBar />
+              <EventCard />
             </div>
           }
         />
