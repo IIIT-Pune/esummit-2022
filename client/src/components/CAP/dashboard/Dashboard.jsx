@@ -29,7 +29,7 @@ const Dashboard = () => {
           </span>
         </div>
       </div>
-      <div className="flex flex-col-reverse lg:flex-row justify-center m-12">
+      <div className="flex flex-col-reverse lg:flex-row justify-center  lg:m-12">
         <div className="w-full flex justify-center">
           <div className="w-full mt-4">
             <div className="p-2 my-2 font-bold border border-sky-500 backdrop-blur-lg text-sky-500 text-2xl lg:text-3xl font-Poppins flex flex-row justify-between">
@@ -48,6 +48,17 @@ const Dashboard = () => {
                 />
               );
             })}
+
+            {/* {Data.map((item) => {
+              return (
+                <ListItem
+                  key={item.id}
+                  rank={item.rank}
+                  name={item.name}
+                  points={item.points}
+                />
+              );
+            })} */}
           </div>
         </div>
         <CapCard name="Cameron" rank={101} points={1982} refcode="ABCXYZ" />

@@ -78,7 +78,7 @@ function App() {
         <Route
           path="leaderboard"
           element={
-            <div className="py-9 px-4 lg:h-screen  bg-vrbg bg-cover">
+            <div className="py-9 px-4 w-fit sm:w-full bg-vrbg bg-cover">
               <Dashboard />
             </div>
           }
