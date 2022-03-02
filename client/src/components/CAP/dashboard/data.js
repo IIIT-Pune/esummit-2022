@@ -59,6 +59,42 @@ const Data = [
     rank: 10,
     points: 2575,
   },
+  {
+    id: 101,
+    name: "Cameron Williamson",
+    rank: 1,
+    points: 2563,
+  },
+  {
+    id: 202,
+    name: "Cameron Williamson",
+    rank: 2,
+    points: 2575,
+  },
+  {
+    id: 303,
+    name: "Cameron Williamson",
+    rank: 3,
+    points: 2563,
+  },
+  {
+    id: 404,
+    name: "Cameron Williamson",
+    rank: 4,
+    points: 2575,
+  },
+  {
+    id: 505,
+    name: "Cameron Williamson",
+    rank: 5,
+    points: 2563,
+  },
+  {
+    id: 606,
+    name: "Cameron Williamson",
+    rank: 6,
+    points: 2575,
+  },
 ];
 
 export default Data;

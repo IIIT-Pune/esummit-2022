@@ -6,38 +6,38 @@ import axios from "axios";
 import baseUrl from "../../../baseUrl";
 
 const Dashboard = () => {
-	const [leaderboard, Setleaderboard] = useState([]);
-	const [token, Settoken] = useState(
-		localStorage.getItem("token")
-			? JSON.parse(localStorage.getItem("token"))
-			: null
-	);
-  const [user,Setuser]=useState(null);
-	useEffect(() => {
-		console.log(token);
-		axios
-			.get(`${baseUrl}api/leaderboard`)
-			.then((res) => {
-				Setleaderboard(res.data);
-				// console.log(res.data);
-			})
-			.catch((err) => {
-				console.log(err);
-			});
-		axios
-			.get(`${baseUrl}api/auth/fetchalldata`, {
-				headers: {
-					"auth-token": token,
-				},
-			})
-			.then((res) => {
+  const [leaderboard, Setleaderboard] = useState([]);
+  const [token, Settoken] = useState(
+    localStorage.getItem("token")
+      ? JSON.parse(localStorage.getItem("token"))
+      : null
+  );
+  const [user, Setuser] = useState(null);
+  useEffect(() => {
+    console.log(token);
+    axios
+      .get(`${baseUrl}api/leaderboard`)
+      .then((res) => {
+        Setleaderboard(res.data);
+        // console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    axios
+      .get(`${baseUrl}api/auth/fetchalldata`, {
+        headers: {
+          "auth-token": token,
+        },
+      })
+      .then((res) => {
         Setuser(res.data);
-				console.log(res.data);
-			})
-			.catch((err) => {
-				console.log(err);
-			});;
-	}, []);
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   return (
     <div className="space-y-8">
@@ -58,18 +58,18 @@ const Dashboard = () => {
               <div className="">POINTS</div>
             </div>
 
-						{leaderboard.map((item, i) => {
-							return (
-								<ListItem
-									key={item._id}
-									rank={i + 1}
-									name={item.name}
-									points={item.points}
-								/>
-							);
-						})}
+            {leaderboard.map((item, i) => {
+              return (
+                <ListItem
+                  key={item._id}
+                  rank={i + 1}
+                  name={item.name}
+                  points={item.points}
+                />
+              );
+            })}
 
-						{/* {Data.map((item) => {
+            {/* {Data.map((item) => {
               return (
                 <ListItem
                   key={item.id}
@@ -79,12 +79,19 @@ const Dashboard = () => {
                 />
               );
             })} */}
-					</div>
-				</div>
-				{user && <CapCard name={user.name} rank={101} points={100} refcode={user.referalID} /> }
-			</div>
-		</div>
-	);
+          </div>
+        </div>
+        {user && (
+          <CapCard
+            name={user.name}
+            rank={101}
+            points={100}
+            refcode={user.referalID}
+          />
+        )}
+      </div>
+    </div>
+  );
 };
 
 export default Dashboard;
