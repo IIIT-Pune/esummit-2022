@@ -12,7 +12,7 @@ const Dashboard = () => {
       ? JSON.parse(localStorage.getItem("token"))
       : null
   );
-  const [user, Setuser] = useState(null);
+  const [user, Setuser] = useState(true);
   useEffect(() => {
     console.log(token);
     axios
