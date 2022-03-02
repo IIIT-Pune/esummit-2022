@@ -20,7 +20,7 @@ const GreetCard = (props) => {
         </div>
       </div>
       <div>
-        <img src="src\assets\chatbot2.png" alt="" />
+        <img src="src\images\chatbot2.png" alt="" />
       </div>
     </div>
   );
