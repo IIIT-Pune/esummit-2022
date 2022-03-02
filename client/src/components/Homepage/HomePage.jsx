@@ -1,11 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./HomePage.css";
-import linesanddots from "../images/linesanddots.png";
-import globe from "../images/dots.png";
-import shine from "../images/shine.png";
-import discord from "../Images/discord.png";
-import calender from "../Images/calender.png";
-import play from "../Images/play.png";
 
 export default function Homepage() {
   const preScrollY = useRef(0);
@@ -88,15 +82,15 @@ export default function Homepage() {
         <div id="banner">
           <div id='links' className="dance">
             <div id='youtube'>
-              <img src={play} className="icons"/>
+              <img src="https://i.ibb.co/41tFkn9/play.png" className="icons"/>
               <a className='hov' href='javascript:void(0)' onClick={Show}><span className="linktxt">Watch Teaser</span></a>
             </div>
             <div id='reminder'>
-              <img src={calender} className="icons"/>
+              <img src="https://i.ibb.co/W5ghnbk/calender.png" className="icons"/>
               <a className='hov' href='#' ><span className="linktxt">March 19</span></a>
             </div>
             <div id='discord'>
-              <img src={discord} className="icons"/>
+              <img src="https://i.ibb.co/DCVmtJF/discord.png" className="icons"/>
               <a className='hov' href='https://discord.gg/ASDahbGy'><span className="linktxt">Join Discord</span></a>
             </div>
           </div>
@@ -104,7 +98,7 @@ export default function Homepage() {
         </div>
       </div>
       <div id="popup">
-        <iframe className="ytvid" width="auto" height="100%" src="https://www.youtube.com/embed/65SudyBdaxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" className="ytvideo" height="315" src="https://www.youtube.com/embed/65SudyBdaxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <button id="close" onClick={Hide}>X</button>
       </div>
       <div id='btndiv' className="">
@@ -128,9 +122,9 @@ export default function Homepage() {
           </div>
         </div>
       <div className="images ">
-        <img className="lines " src={linesanddots} alt="linesanddots" />
-        <img className="globe" src={globe} alt="globe" />
-        <img className="shine" src={shine} alt="Shine" />
+        <img className="lines " src="https://i.ibb.co/YWw4pdD/linesanddots.png" alt="linesanddots" />
+        <img className="globe" src="https://i.ibb.co/kMKFM6y/dots.png" alt="globe" />
+        <img className="shine" src="https://i.ibb.co/gVn5KVJ/shine.png" alt="Shine" />
       </div>
     </div>
   );
