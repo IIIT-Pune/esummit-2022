@@ -20,8 +20,8 @@ function NavBar() {
                   <a href="/" className="nav-link nav-link-ltr ">
                     HOME
                   </a>
-                  <a href="#" className="nav-link nav-link-ltr ">
-                    TEAM
+                  <a href="/#about" className="nav-link nav-link-ltr ">
+                    ABOUT
                   </a>
 
                   <a href="/#eventshelf" className="nav-link nav-link-ltr">
@@ -32,8 +32,8 @@ function NavBar() {
                     SPEAKERS
                   </a>
 
-                  <a href="#" className="nav-link nav-link-ltr ">
-                    SPONSORS
+                  <a href="#faqs" className="nav-link nav-link-ltr ">
+                    FAQs
                   </a>
                   {/* <a
                     href="#"
@@ -115,38 +115,38 @@ function NavBar() {
             >
               <div className=" px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a
-                  href="#"
+                  href="/"
                   className="font-Montserrat font-bold hover:bg-cyan-700 text-white block px-3 py-2 rounded-md text-base"
                 >
                   HOME
                 </a>
 
                 <a
-                  href="#"
+                  href="/#about"
                   className="font-Montserrat text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base font-bold"
                 >
-                  TEAM
+                  ABOUT
                 </a>
 
                 <a
-                  href="#"
+                  href="/#eventshelf"
                   className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
                 >
                   EVENTS
                 </a>
 
                 <a
-                  href="#"
+                  href="/#speakers"
                   className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
                 >
                   SPEAKERS
                 </a>
 
                 <a
-                  href="#"
+                  href="/#faqs"
                   className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
                 >
-                  SPONSORS
+                  FAQS
                 </a>
               </div>
             </div>

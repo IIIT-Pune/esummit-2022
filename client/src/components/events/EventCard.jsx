@@ -27,12 +27,14 @@ const EventCard = (props) => {
                 <span className="text-cyan-300">{data.blueText}</span>
               </div>
               <img className="w-1/3" src={data.qrCode} alt={data.name} />
-              <button
-                type="submit"
-                className="text-white border-2 hover:bg-white border-white hover:text-black font-bold rounded-full m-2 p-2"
-              >
-                REGISTER NOW
-              </button>
+              <a href={data.registerLink}>
+                <button
+                  type="submit"
+                  className="text-white border-2 hover:bg-white border-white hover:text-black font-bold rounded-full m-2 p-2"
+                >
+                  REGISTER NOW
+                </button>
+              </a>
             </div>
             <div className="lg:w-3/5 mt-4 space-y-4 divide-y divide-cyan-400 text-center">
               {/* right-col */}
@@ -45,12 +47,14 @@ const EventCard = (props) => {
                 </div>
                 {/* Rulebook Button */}
                 <div>
-                  <button
-                    type="submit"
-                    className="text-cyan-200 border-2 hover:bg-cyan-700 border-cyan-200 hover:text-white font-bold rounded-full m-2 p-2 px-3"
-                  >
-                    RULEBOOK
-                  </button>
+                  <a href={data.rulebookLink}>
+                    <button
+                      type="submit"
+                      className="text-cyan-200 border-2 hover:bg-cyan-700 border-cyan-200 hover:text-white font-bold rounded-full m-2 p-2 px-3"
+                    >
+                      RULEBOOK
+                    </button>
+                  </a>
                 </div>
               </div>
               <div className="pt-2">
