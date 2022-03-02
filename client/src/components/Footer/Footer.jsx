@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
         <hr />
         <div className="flex items-center justify-center flex-nowrap font-bold">
-          <div className="space-x-8">
+          <div className="space-x-4 sm:space-x-8 ">
             <a href="#" className="nav-link nav-link-ltr ">
               HOME
             </a>

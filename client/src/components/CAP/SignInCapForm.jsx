@@ -9,43 +9,54 @@ import baseUrl from "../../baseUrl";
 import { useNavigate } from "react-router-dom";
 
 const SignInCapForm = (props) => {
+  const [MailError, setMailError] = useState("");
+
   const [formData, setformData] = useState({
     email: "",
     password: "",
   });
-	const navigate = useNavigate();
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-   	let flag = 1;
-		Object.values(formData).map((obj) => {
-			if (obj === "") {
-				flag = 0;
-			}
-		});
-		if (flag === 0) {
-			alert("Please Fill the form");
-			return;
-		}
+    let flag = 1;
+    Object.values(formData).map((obj) => {
+      if (obj === "") {
+        flag = 0;
+      }
+    });
+    if (flag === 0) {
+      alert("Please Fill the form");
+      return;
+    }
+    const ex =
+      /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    if (!ex.test(formData.email)) {
+      setMailError("Enter valid Email ID.");
+      return;
+    } else if (MailError.email != "") {
+      setMailError("");
+    }
+
     axios
-			.post(`${baseUrl}api/auth/login`, {
-				email: formData.email,
-				password: formData.password,
-			})
-			.then((res) => {
-				const data = res.data;
-				if (data.error) {
-					alert(data.error);
-				}
-				if (data.success) {
-					localStorage.setItem("token", JSON.stringify(data.authtoken));
-					navigate("/leaderboard");
-				}
-				// console.log(res.data);
-			})
-			.catch((err) => {
-				console.log(err);
-			});
-  }
+      .post(`${baseUrl}api/auth/login`, {
+        email: formData.email,
+        password: formData.password,
+      })
+      .then((res) => {
+        const data = res.data;
+        if (data.error) {
+          alert(data.error);
+        }
+        if (data.success) {
+          localStorage.setItem("token", JSON.stringify(data.authtoken));
+          navigate("/leaderboard");
+        }
+        // console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   return (
     <>
@@ -59,7 +70,7 @@ const SignInCapForm = (props) => {
               {/* <label className="block">Email</label> */}
               <input
                 className="shadow border-2 border-gray-400 rounded w-full bg-slate-200 px-3 py-2"
-                type=""
+                type="email"
                 placeholder="Email"
                 id="email"
                 name="email"
@@ -70,7 +81,11 @@ const SignInCapForm = (props) => {
                     email: e.target.value,
                   }));
                 }}
+                required
               />
+              <div className="pt-1 ml-3 text-red-500 font-Montserrat text-xs">
+                {MailError}
+              </div>
             </div>
             <div className="mb-4">
               {/* <label className="block">Password</label> */}
@@ -87,6 +102,7 @@ const SignInCapForm = (props) => {
                     password: e.target.value,
                   }));
                 }}
+                required
               />
             </div>
           </div>

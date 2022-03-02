@@ -3,26 +3,26 @@ import eventIcon from "../Images/events/icons/eventicon.png";
 import qrCode from "../Images/events/qr/d2c.png";
 import NavBar from "../Homepage/NavBar";
 import { useParams } from "react-router-dom";
-import Data from "./data";
+import Data from "./Data";
 
 const EventCard = (props) => {
   const { event_name } = useParams();
   const data = Data.find((obj) => obj.name === event_name);
-
+  // console.log(data);
   return (
     <div className=" bg-eventsbg bg-cover flex justify-center items-center lg:h-screen">
       <div className="flex justify-center items-center my-10">
-        <div className="flex h-fit text-white font-Montserrat font-medium bg-black bg-opacity-50 backdrop-blur lg:w-4/5 p-8 m-8">
+        <div className="flex mt-[100px] h-fit text-white font-Montserrat font-medium bg-black bg-opacity-50 backdrop-blur lg:w-4/5 p-8 m-8">
           <div className="flex flex-col lg:flex-row justify-center w-full">
             <div className="lg:w-2/5 flex flex-col space-y-4 justify-center items-center text-center">
-              <div>
-                <img src={eventIcon} alt="" />
+              <div className="">
+                <img className="max-h-[10rem]" src={data.eventIcon} alt="" />
               </div>
               <div className="text-4xl font-bold">
                 {data.whiteText}{" "}
                 <span className="text-cyan-300">{data.blueText}</span>
               </div>
-              <img src={qrCode} alt="" />
+              <img className="w-1/3" src={data.qrCode} alt="" />
               <button
                 type="submit"
                 className="text-white border-2 hover:bg-white border-white hover:text-black font-bold rounded-full m-2 p-2"

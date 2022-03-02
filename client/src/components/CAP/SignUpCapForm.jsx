@@ -15,6 +15,8 @@ const SignUpCapForm = (props) => {
     password: "",
     confirmPassword: "",
   });
+  const [PasswordError, setPasswordError] = useState("");
+  const [MailError, setMailError] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -29,10 +31,24 @@ const SignUpCapForm = (props) => {
       alert("Please Fill the form");
       return;
     }
-    if (formData.password !== formData.confirmPassword) {
-      alert("Password and Confirm Password not matched");
+
+    const ex =
+      /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    if (!ex.test(formData.email)) {
+      setMailError("Enter valid Email ID.");
       return;
+    } else if (MailError.email != "") {
+      setMailError("");
     }
+
+    if (formData.password !== formData.confirmPassword) {
+      setPasswordError("Password and Confirm Password should match.");
+      // alert("Password and Confirm Password not matched");
+      return;
+    } else {
+      setPasswordError("");
+    }
+
     axios
       .post(`${baseUrl}api/auth/createuser`, {
         name: formData.name,
@@ -53,20 +69,6 @@ const SignUpCapForm = (props) => {
       .catch((err) => {
         console.log(err);
       });
-  };
-
-  const [Error, setError] = useState("");
-
-  const checkValidate = (e) => {
-    setformData((data) => ({
-      ...data,
-      confirmPassword: e.target.value,
-    }));
-    if (formData.password !== formData.confirmPassword) {
-      setError("Password and Confirm Password should match");
-    } else {
-      setError("");
-    }
   };
 
   return (
@@ -92,13 +94,14 @@ const SignUpCapForm = (props) => {
                     name: e.target.value,
                   }));
                 }}
+                required
               />
             </div>
             <div className="mb-4">
               {/* <label className="block">Email</label> */}
               <input
                 className="shadow border-2 border-gray-400 rounded w-full bg-slate-200 px-3 py-2"
-                type=""
+                type="email"
                 placeholder="Email"
                 id="email"
                 name="email"
@@ -109,8 +112,13 @@ const SignUpCapForm = (props) => {
                     email: e.target.value,
                   }));
                 }}
+                required
               />
+              <div className="pt-1 ml-3 text-red-500 font-Montserrat text-xs">
+                {MailError}
+              </div>
             </div>
+
             <div className="mb-4">
               {/* <label className="block">Password</label> */}
               <input
@@ -126,6 +134,8 @@ const SignUpCapForm = (props) => {
                     password: e.target.value,
                   }));
                 }}
+                minLength="5"
+                required
               />
             </div>
             <div className="mb-4">
@@ -137,10 +147,18 @@ const SignUpCapForm = (props) => {
                 id="confirmPassword"
                 name="confirmPassword"
                 value={formData.confirmPassword}
-                onChange={(e) => checkValidate(e)}
+                onChange={(e) => {
+                  setformData((data) => ({
+                    ...data,
+                    confirmPassword: e.target.value,
+                  }));
+                }}
+                required
               />
+              <div className="pt-1 ml-3 text-red-500 font-Montserrat text-xs">
+                {PasswordError}
+              </div>
             </div>
-            <div>{Error}</div>
           </div>
           <ButtonCmp>
             {/* {props.capFormButtonText} */}
