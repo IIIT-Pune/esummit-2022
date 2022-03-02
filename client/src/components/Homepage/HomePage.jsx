@@ -74,11 +74,17 @@ export default function Homepage() {
     };
   })
   let vid = document.getElementById("popup");
+  let ytvid = document.getElementById("ytvid");
+  let close = document.getElementsByClassName("close");
   function Show() {
     vid.style.visibility = 'visible';
   }
   function Hide() {
-    vid.style.visibility = 'hidden';
+    var iframe = popup.getElementsByTagName("iframe")[0];
+      var url = iframe.getAttribute('src');
+      iframe.setAttribute('src', '');
+      iframe.setAttribute('src', url);
+      vid.style.visibility = 'hidden';
   }
   return (
     <div className="Main">
@@ -102,7 +108,7 @@ export default function Homepage() {
         </div>
       </div>
       <div id="popup">
-        <iframe width="40%" height="100%" src="https://www.youtube.com/embed/65SudyBdaxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe className="ytvid" width="auto" height="100%" src="https://www.youtube.com/embed/65SudyBdaxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <button id="close" onClick={Hide}>X</button>
       </div>
       <div id='btndiv' className="">
