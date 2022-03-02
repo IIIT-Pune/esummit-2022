@@ -1,6 +1,6 @@
 const data = [
   {
-    name: "POKER",
+    name: "poker",
     logolink: "",
     d2clink:
       "https://dare2compete.com/p/poker-tournament-e-summit22-making-impossible-inevitable-269425",

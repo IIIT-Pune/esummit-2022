@@ -16,13 +16,17 @@ const EventCard = (props) => {
           <div className="flex flex-col lg:flex-row justify-center w-full">
             <div className="lg:w-2/5 flex flex-col space-y-4 justify-center items-center text-center">
               <div className="">
-                <img className="max-h-[10rem]" src={data.eventIcon} alt="" />
+                <img
+                  className="max-h-[12rem]"
+                  src={data.eventIcon}
+                  alt={data.name}
+                />
               </div>
               <div className="text-4xl font-bold">
                 {data.whiteText}{" "}
                 <span className="text-cyan-300">{data.blueText}</span>
               </div>
-              <img className="w-1/3" src={data.qrCode} alt="" />
+              <img className="w-1/3" src={data.qrCode} alt={data.name} />
               <button
                 type="submit"
                 className="text-white border-2 hover:bg-white border-white hover:text-black font-bold rounded-full m-2 p-2"
