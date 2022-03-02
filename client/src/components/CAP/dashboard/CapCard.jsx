@@ -31,11 +31,11 @@ const CapCard = (props) => {
 					<div>
 						<div className="font-Poppins text-white font-bold grid grid-cols-2 gap-32 lg:gap-12 content-center items-center justify-center ">
 							<div>
-								<div className="text-sky-500 text-5xl">#{props.rank}</div>
+								<div className="text-sky-500 text-5xl text-center">#{props.rank}</div>
 								<div className="text-center">POSITION</div>
 							</div>
 							<div>
-								<div className="text-sky-500 text-5xl">{props.points}</div>
+								<div className="text-sky-500 text-5xl text-center">{props.points}</div>
 								<div className="text-center">POINTS</div>
 							</div>
 						</div>

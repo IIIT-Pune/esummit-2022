@@ -12,51 +12,62 @@ const Dashboard = () => {
 			? JSON.parse(localStorage.getItem("token"))
 			: null
 	);
-  const [user,Setuser]=useState(null);
-	useEffect(() => {
-		console.log(token);
-		axios
+	const [user, Setuser] = useState(null);
+
+	const FetchDataUser = async () => {
+		const leaders = await axios
 			.get(`${baseUrl}api/leaderboard`)
 			.then((res) => {
 				Setleaderboard(res.data);
-				// console.log(res.data);
+				return res.data;
 			})
 			.catch((err) => {
 				console.log(err);
+				return null;
 			});
-		axios
-			.get(`${baseUrl}api/auth/fetchalldata`, {
-				headers: {
-					"auth-token": token,
-				},
-			})
-			.then((res) => {
-        Setuser(res.data);
-				console.log(res.data);
-			})
-			.catch((err) => {
-				console.log(err);
-			});;
+		if (token && leaders) {
+			await axios
+				.get(`${baseUrl}api/auth/fetchalldata`, {
+					headers: {
+						"auth-token": token,
+					},
+				})
+				.then((res) => {
+					const obj = leaders.findIndex((o) => o.email == res.data.email);
+					if (obj != -1) {
+						Setuser({ ...res.data, rank: obj, points: leaders[obj].points });
+					} else {
+						Setuser({ ...res.data, rank: "", points: "" });
+					}
+				})
+				.catch((err) => {
+					console.log(err);
+				});
+		}
+	};
+
+	useEffect(() => {
+		FetchDataUser();
 	}, []);
 
-  return (
-    <div className="space-y-8">
-      <div>
-        <div className="mb-3 font-Montserrat text-white text-center text-5xl">
-          <span className="mb-4"> CAMPUS </span>
-          <span className="text-black border bg-white py-0.3 px-1">
-            AMBASSADOR
-          </span>
-        </div>
-      </div>
-      <div className="flex flex-col-reverse lg:flex-row justify-center  lg:m-12">
-        <div className="w-full flex justify-center">
-          <div className="w-full mt-4">
-            <div className="p-2 my-2 font-bold border border-sky-500 backdrop-blur-lg text-sky-500 text-2xl lg:text-3xl font-Poppins flex flex-row justify-between">
-              <div className="">RANK</div>
-              <div className="">NAME</div>
-              <div className="">POINTS</div>
-            </div>
+	return (
+		<div className="space-y-8">
+			<div>
+				<div className="mb-3 font-Montserrat text-white text-center text-5xl">
+					<span className="mb-4"> CAMPUS </span>
+					<span className="text-black border bg-white py-0.3 px-1">
+						AMBASSADOR
+					</span>
+				</div>
+			</div>
+			<div className="flex flex-col-reverse lg:flex-row justify-center  lg:m-12">
+				<div className="w-full flex justify-center">
+					<div className="w-full mt-4">
+						<div className="p-2 my-2 font-bold border border-sky-500 backdrop-blur-lg text-sky-500 text-2xl lg:text-3xl font-Poppins flex flex-row justify-between">
+							<div className="">RANK</div>
+							<div className="">NAME</div>
+							<div className="">POINTS</div>
+						</div>
 
 						{leaderboard.map((item, i) => {
 							return (
@@ -81,7 +92,14 @@ const Dashboard = () => {
             })} */}
 					</div>
 				</div>
-				{user && <CapCard name={user.name} rank={101} points={100} refcode={user.referalID} /> }
+				{user && (
+					<CapCard
+						name={user.name}
+						rank={user.rank}
+						points={user.points}
+						refcode={user.referalID}
+					/>
+				)}
 			</div>
 		</div>
 	);
