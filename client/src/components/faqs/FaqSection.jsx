@@ -7,7 +7,7 @@ export default function FaqSection() {
   const [questions] = useState(data);
 
   return (
-    <div className="p-5 bg-[#000A0C]">
+    <div className="p-5 bg-[#000A0C]" id="faqs">
       <div className="p-2 text-center font-Montserrat font-bold text-4xl md:text-6xl">
         <span className="text-white">FAQ</span>
         <span className="text-cyan-400">S </span>

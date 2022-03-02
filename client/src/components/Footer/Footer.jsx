@@ -53,11 +53,11 @@ const Footer = () => {
         <hr />
         <div className="flex items-center justify-center flex-nowrap font-bold">
           <div className="space-x-4 sm:space-x-8 ">
-            <a href="#" className="nav-link nav-link-ltr ">
+            <a href="/" className="nav-link nav-link-ltr ">
               HOME
             </a>
-            <a href="#" className="nav-link nav-link-ltr ">
-              TEAM
+            <a href="/#about" className="nav-link nav-link-ltr ">
+              ABOUT
             </a>
 
             <a href="/#eventshelf" className="nav-link nav-link-ltr">
@@ -68,8 +68,8 @@ const Footer = () => {
               SPEAKERS
             </a>
 
-            <a href="#" className="nav-link nav-link-ltr ">
-              SPONSORS
+            <a href="/#faqs" className="nav-link nav-link-ltr ">
+              FAQS
             </a>
           </div>
         </div>

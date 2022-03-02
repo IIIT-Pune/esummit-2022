@@ -69,18 +69,18 @@ const Dashboard = () => {
 							<div className="">POINTS</div>
 						</div>
 
-						{leaderboard.map((item, i) => {
-							return (
-								<ListItem
-									key={item._id}
-									rank={i + 1}
-									name={item.name}
-									points={item.points}
-								/>
-							);
-						})}
+            {leaderboard.map((item, i) => {
+              return (
+                <ListItem
+                  key={item._id}
+                  rank={i + 1}
+                  name={item.name}
+                  points={item.points}
+                />
+              );
+            })}
 
-						{/* {Data.map((item) => {
+            {/* {Data.map((item) => {
               return (
                 <ListItem
                   key={item.id}
