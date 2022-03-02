@@ -20,7 +20,7 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div>
+    <div className="space-y-8">
       <div>
         <div className="mb-3 font-Montserrat text-white text-center text-5xl">
           <span className="mb-4"> CAMPUS </span>
