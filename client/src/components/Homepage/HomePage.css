@@ -18,7 +18,7 @@ body {
   src: url("../fonts/METAG___.TTF");
 }
 #animate {
-  z-index: 20;
+  z-index: 6;
   position: relative;
   transform: translateY(25vh);
 }
@@ -171,6 +171,9 @@ body {
   padding-right: 18%;
   z-index: 10;
 }
+.linktxt:hover {
+  color: aqua;
+}
 .hov {
   color: white;
   font-size: 1.5rem;
@@ -198,7 +201,6 @@ body {
   }
   #countdown {
     width: 25%;
-    padding-left: 30px;
   }
   .globe {
     bottom: 0%;
@@ -224,7 +226,6 @@ body {
 @media (max-width: 1300px) and (min-width: 1100px) {
   #countdown {
     width: 20%;
-    padding-left: 30px;
   }
   .day-time,
   .hour-time,
@@ -244,7 +245,7 @@ body {
   }
   .globe {
     bottom: 0%;
-    height: 75vh;
+    height: 70vh;
     width: 100vw;
     z-index: 2;
     position: absolute;
@@ -259,7 +260,7 @@ body {
     mix-blend-mode: color-dodge;
   }
   .shine {
-    height: 75vh;
+    height: 70vh;
     width: 100vw;
   }
 }
@@ -270,7 +271,6 @@ body {
   }
   #countdown {
     width: 22%;
-    padding-left: 30px;
   }
   #links {
     padding-right: 23%;
@@ -296,7 +296,7 @@ body {
   }
   .globe {
     bottom: 0%;
-    height: 70vh;
+    height: 65vh;
     width: 100vw;
     z-index: 2;
     position: absolute;
@@ -311,7 +311,7 @@ body {
     mix-blend-mode: color-dodge;
   }
   .shine {
-    height: 70vh;
+    height: 65vh;
     width: 100vw;
   }
 }
@@ -352,7 +352,7 @@ body {
   }
   .globe {
     bottom: 0%;
-    height: 70vh;
+    height: 65vh;
     width: 100vw;
     z-index: 2;
     position: absolute;
@@ -367,7 +367,7 @@ body {
     mix-blend-mode: color-dodge;
   }
   .shine {
-    height: 70vh;
+    height: 65vh;
     width: 100vw;
   }
 }
@@ -433,10 +433,7 @@ body {
   #animate {
     transform: translateY(35vh);
   }
-  #countdown {
-    /* width: 15%; */
-    padding-left: 30px;
-  }
+
   #links {
     padding-right: 30%;
   }

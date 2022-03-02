@@ -3,8 +3,6 @@ import "./HomePage.css";
 import linesanddots from "../images/linesanddots.png";
 import globe from "../images/dots.png";
 import shine from "../images/shine.png";
-import chatbot from "../images/Chatbot.png";
-import NavBar from "./NavBar";
 import discord from "../Images/discord.png";
 import calender from "../Images/calender.png";
 import play from "../Images/play.png";
@@ -27,7 +25,6 @@ export default function Homepage() {
       animate.style.top = value * 2.5 + "px";
       animate.style.opacity = 1 - value / 50;
       animate.style.transition = "0.7s";
-      value>0?animate.style.zIndex = 1:animate.style.zIndex = 20;
     };
     window.addEventListener("scroll", handleScroll);
 
@@ -35,7 +32,6 @@ export default function Homepage() {
   }, [goingUp]);
   let animate = document.getElementById("animate");
   let text = document.getElementById("text");
-  window.addEventListener("scroll", function () { });
 
   const countdown = () => {
     const countDate = new Date("March 28, 2022 :00:00").getTime();
