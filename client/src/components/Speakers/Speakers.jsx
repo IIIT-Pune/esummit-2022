@@ -38,36 +38,40 @@ function Speakers() {
             <span className="text-cyan-400"> SESSIONS </span>
           </div>
         </div>
-        <div className="ca" style={{ marginBottom: "50px" , width:'80%', marginLeft:'10%'}}>
+        <div className="ca" style={{ position:'relative', marginBottom: "50px" , width:'80%', marginLeft:'10%'}}>
           <div
             className="row flex flex-col gap-y-8 items-center lg:flex-row justify-around"
             style={{ marginTop: "114px" }}
           >
+              
             <div className="col-md-4">
               <SpeakerCard
-                name={"Speaker Name"}
-                details={"Details"}
-                date={"Date and Time"}
-                picture={Pict}
-                lk={"#"}
+                name={"Prasoon Gupta"}
+                details={"Cofounder - Satvikko"}
+                date={"25 MARCH 4:00 PM"}
+                picture={"https://i.ibb.co/N3xNss4/Prasoon-Gupta.png"}
+                lk={"https://www.linkedin.com/in/prasoongupta/?originalSubdomain=in"}
+                
               />
             </div>
             <div className="col-md-4">
               <SpeakerCard
-                name={"Speaker Name"}
-                details={"Details"}
-                date={"Date and Time"}
-                picture={Pict}
-                lk={"#"}
+                name={"Dr. Annurag Batra"}
+                details={"Chairman - Businessworld"}
+                date={"25 MARCH 6:00 PM"}
+                picture={"https://i.ibb.co/S63bSX6/Dr-Annurag-Batra.jpg"}
+                lk={"https://www.linkedin.com/in/batraanurag/?originalSubdomain=in"}
+                
               />
             </div>
             <div className="col-md-4">
               <SpeakerCard
-                name={"Speaker Name"}
-                details={"Details"}
-                date={"Date and Time"}
-                picture={Pict}
-                lk={"#"}
+                name={"Mahalakshmi Saravana"}
+                details={"Founder-Women Entrepreneurs India"}
+                date={"26 MARCH 4:00 PM"}
+                picture={"https://i.ibb.co/NK6mnb1/Mahalakshmi.png"}
+                lk={"https://www.linkedin.com/in/mahalakshmisaravanan/"}
+                
               />
             </div>
           </div>
@@ -76,32 +80,36 @@ function Speakers() {
             className="row flex flex-col gap-y-8 items-center lg:flex-row justify-around"
             style={{ marginTop: "120px" }}
           >
+            
             <div className="col-md-4">
-              <SpeakerCard
-                name={"Speaker Name"}
-                details={"Details"}
-                date={"Date and Time"}
-                picture={Pict}
-                lk={"#"}
+            <SpeakerCard
+                name={"Sandeep Jain"}
+                details={"Founder - GeeksForGeeks"}
+                date={"26 MARCH 6:00 PM"}
+                picture={"https://i.ibb.co/BnqLJy2/Sandeep-Jain.jpg"}
+                lk={"https://www.linkedin.com/in/sandeep-jain-b3940815/"}
+                
               />
             </div>
             <div className="col-md-4">
               <SpeakerCard
-                name={"Speaker Name"}
-                details={"Details"}
-                date={"Date and Time"}
-                picture={Pict}
-                lk={"#"}
+                name={"Paresh Gupta"}
+                details={"Founder & CEO - GCEC"}
+                date={"27 MARCH 4:00 PM"}
+                picture={"https://i.ibb.co/q9HR7nL/Paresh-Gupta.jpg"}
+                lk={"https://www.linkedin.com/in/pareshgupta1/"}
+                
               />
             </div>
             <div className="col-md-4">
-              <SpeakerCard
-                name={"Speaker Name"}
-                details={"Details"}
-                date={"Date and Time"}
-                picture={Pict}
-                lk={"#"}
-              />
+                <SpeakerCard
+                  name={"Arjun Vaidya "}
+                  details={"Founder - Dr.Vaidya's"}
+                  date={"27 MARCH 6:00PM"}
+                  picture={"https://i.ibb.co/GshLBqR/Arjun-Vaidya.jpg"}
+                lk={"https://www.linkedin.com/in/arjunvaidya/?originalSubdomain=in"}
+                
+                />
             </div>
           </div>
         </div>
