@@ -6,50 +6,70 @@ import axios from "axios";
 import baseUrl from "../../../baseUrl";
 
 const Dashboard = () => {
-  const [leaderboard, Setleaderboard] = useState([]);
-  useEffect(() => {
-    axios
-      .get(`${baseUrl}api/leaderboard`)
-      .then((res) => {
-        Setleaderboard(res.data);
-        // console.log(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+	const [leaderboard, Setleaderboard] = useState([]);
+	const [token, Settoken] = useState(
+		localStorage.getItem("token")
+			? JSON.parse(localStorage.getItem("token"))
+			: null
+	);
+  const [user,Setuser]=useState(null);
+	useEffect(() => {
+		console.log(token);
+		axios
+			.get(`${baseUrl}api/leaderboard`)
+			.then((res) => {
+				Setleaderboard(res.data);
+				// console.log(res.data);
+			})
+			.catch((err) => {
+				console.log(err);
+			});
+		axios
+			.get(`${baseUrl}api/auth/fetchalldata`, {
+				headers: {
+					"auth-token": token,
+				},
+			})
+			.then((res) => {
+        Setuser(res.data);
+				console.log(res.data);
+			})
+			.catch((err) => {
+				console.log(err);
+			});;
+	}, []);
 
-  return (
-    <div>
-      <div>
-        <div className="mb-3 font-Montserrat text-white text-center text-5xl">
-          <span className="mb-4"> CAMPUS </span>
-          <span className="text-black border bg-white py-0.3 px-1">
-            AMBASSADOR
-          </span>
-        </div>
-      </div>
-      <div className="flex flex-col-reverse lg:flex-row justify-center  lg:m-12">
-        <div className="w-full flex justify-center">
-          <div className="w-full mt-4">
-            <div className="p-2 my-2 font-bold border border-sky-500 backdrop-blur-lg text-sky-500 text-2xl lg:text-3xl font-Poppins flex flex-row justify-between">
-              <div className="">RANK</div>
-              <div className="">NAME</div>
-              <div className="">POINTS</div>
-            </div>
+	return (
+		<div>
+			<div>
+				<div className="mb-3 font-Montserrat text-white text-center text-5xl">
+					<span className="mb-4"> CAMPUS </span>
+					<span className="text-black border bg-white py-0.3 px-1">
+						AMBASSADOR
+					</span>
+				</div>
+			</div>
+			<div className="flex flex-col-reverse lg:flex-row justify-center  lg:m-12">
+				<div className="w-full flex justify-center">
+					<div className="w-full mt-4">
+						<div className="p-2 my-2 font-bold border border-sky-500 backdrop-blur-lg text-sky-500 text-2xl lg:text-3xl font-Poppins flex flex-row justify-between">
+							<div className="">RANK</div>
+							<div className="">NAME</div>
+							<div className="">POINTS</div>
+						</div>
 
-            {leaderboard.map((item, i) => {
-              return (
-                <ListItem
-                  key={item._id}
-                  rank={i + 1}
-                  name={item.name}
-                  points={item.points}
-                />
-              );
-            })}
+						{leaderboard.map((item, i) => {
+							return (
+								<ListItem
+									key={item._id}
+									rank={i + 1}
+									name={item.name}
+									points={item.points}
+								/>
+							);
+						})}
 
-            {/* {Data.map((item) => {
+						{/* {Data.map((item) => {
               return (
                 <ListItem
                   key={item.id}
@@ -59,12 +79,12 @@ const Dashboard = () => {
                 />
               );
             })} */}
-          </div>
-        </div>
-        <CapCard name="Cameron" rank={101} points={1982} refcode="ABCXYZ" />
-      </div>
-    </div>
-  );
+					</div>
+				</div>
+				{user && <CapCard name={user.name} rank={101} points={100} refcode={user.referalID} /> }
+			</div>
+		</div>
+	);
 };
 
 export default Dashboard;

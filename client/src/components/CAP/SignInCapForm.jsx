@@ -26,6 +26,7 @@ const SignInCapForm = (props) => {
 			alert("Please Fill the form");
 			return;
 		}
+    console.log(formData);
     axios
 			.post(`${baseUrl}api/auth/login`, {
 				email: formData.email,
@@ -36,6 +37,7 @@ const SignInCapForm = (props) => {
 				if (data.error) {
 					alert(data.error);
 				}
+        console.log(data);
 				if (data.success) {
 					localStorage.setItem("token", JSON.stringify(data.authtoken));
 					navigate("/leaderboard");
