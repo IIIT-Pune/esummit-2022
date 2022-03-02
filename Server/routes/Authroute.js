@@ -1,6 +1,7 @@
 const express = require("express");
 const User = require("../schemas/Authmodel");
 const Emails = require("../schemas/UserEmails");
+const LeaderBoard = require("../schemas/leaderboard");
 const router = express.Router();
 const { body, validationResult } = require("express-validator");
 const bcrypt = require("bcryptjs");
@@ -45,6 +46,13 @@ router.post(
 			const secPass = await bcrypt.hash(req.body.password, salt);
 			const referalID = userca.referalID;
 			// Create a new user
+			const newLead = new LeaderBoard();
+			newLead.name = req.body.name;
+			newLead.email = req.body.email;
+			newLead.save().catch((err) => {
+				console.log(err);
+			});
+      
 			user = await User.create({
 				name: req.body.name,
 				password: secPass,
