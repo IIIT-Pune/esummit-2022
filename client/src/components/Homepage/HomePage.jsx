@@ -28,7 +28,7 @@ export default function Homepage() {
   let text = document.getElementById("text");
 
   const countdown = () => {
-    const countDate = new Date("March 28, 2022 :00:00").getTime();
+    const countDate = new Date("March 18, 2022 23:59:59").getTime();
     // console.log(countDate);
     const now = new Date().getTime();
     const gap = countDate - now;

@@ -114,7 +114,7 @@ body {
 }
 #btndiv {
   width: 100%;
-  bottom: 5%;
+  bottom: 7.5%;
   position: absolute;
   display: flex;
   align-items: center;
@@ -168,11 +168,14 @@ body {
   display: flex;
   flex-direction: row;
   font-family: "Montserrat", sans-serif;
-  padding-right: 18%;
+  padding-right: 15%;
   z-index: 10;
 }
 .linktxt:hover {
   color: aqua;
+}
+.linktxt {
+  font-size: 20px;
 }
 .hov {
   color: white;
@@ -180,8 +183,9 @@ body {
   padding-left: 5%;
 }
 .icons {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
 }
 #youtube,
 #discord,
@@ -190,7 +194,6 @@ body {
   margin-right: 12%;
   display: flex;
   flex: row;
-  vertical-align: middle;
 }
 @media only screen and (min-width: 1300px) {
   #text {
@@ -237,14 +240,17 @@ body {
     font-size: 1.5rem;
   }
   #links {
-    padding-right: 16%;
+    padding-right: 18%;
   }
   .hov {
     font-size: 1.1rem;
   }
   .icons {
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
+  }
+  .linktxt {
+    font-size: 17px;
   }
   .globe {
     bottom: 0%;
@@ -276,7 +282,7 @@ body {
     width: 22%;
   }
   #links {
-    padding-right: 23%;
+    padding-right: 25%;
   }
   .hov {
     font-size: 1rem;
@@ -284,6 +290,9 @@ body {
   .icons {
     width: 20px;
     height: 20px;
+  }
+  .linktxt {
+    font-size: 15px;
   }
   .day-time,
   .hour-time,
@@ -326,7 +335,7 @@ body {
     width: 20%;
   }
   #links {
-    padding-right: 23%;
+    padding-right: 27%;
   }
   .hov {
     font-size: 0.9rem;
@@ -334,6 +343,9 @@ body {
   .icons {
     width: 17px;
     height: 17px;
+  }
+  .linktxt {
+    font-size: 13px;
   }
   .day-time,
   .hour-time,
@@ -380,14 +392,17 @@ body {
     transform: translateY(30vh);
   }
   #links {
-    padding-right: 22%;
+    padding-right: 28%;
   }
   .hov {
     font-size: 0.8rem;
   }
   .icons {
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
+  }
+  .linktxt {
+    font-size: 12px;
   }
 
   .day-time,
@@ -431,7 +446,7 @@ body {
 }
 @media (max-width: 600px) {
   #btndiv {
-    height: 90%;
+    bottom: 42%;
   }
   #animate {
     transform: translateY(35vh);
@@ -446,6 +461,9 @@ body {
   .icons {
     width: 10px;
     height: 10px;
+  }
+  .linktxt {
+    font-size: 8px;
   }
 
   #countdown {
