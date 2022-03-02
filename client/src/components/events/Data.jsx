@@ -1,12 +1,10 @@
 const Data = [
   {
     name: "cryptoclash",
-    eventIcon:
-      "https://lh3.googleusercontent.com/pw/AM-JKLXiqF0bGSfhYAN1B19L3OqBbqkZ6GBht0_tts-bp3phOpzUGrsABYbsQCQ55myb5Qm_evUECJgBLRjtKniB6lTOMijvBX4cu307wSoiIgIna-TkwTNMRMFvVa3troC_EZS36U-qzAsqrWU6jz9wN7T1=s500-no?authuser=0",
+    eventIcon: "https://i.ibb.co/rGVvZ2k/Crypto-Trading-Logo-Blue.png",
     whiteText: "CRYPTO",
     blueText: "CLASH",
-    qrCode:
-      "https://lh3.googleusercontent.com/pw/AM-JKLWupvMgBdSC5_nuDzrcBFeeLM_BbaFl5gPGOx0cj0CIhZxiHh2K2vzRsH17g16Fdw0MxRWWDQPhShST6-CSApm2gUx_fgA8_kCxzhWkGI8C9kM7455goAaphiCuND9hOejqxYtkuTXsK2omL-99uPpm=s312-no?authuser=0",
+    qrCode: "https://i.ibb.co/nRT0wwS/qr-crypto-Clash.png",
     teamSize: "1",
     cashPrize: "10000",
     eventDescription:
@@ -14,12 +12,10 @@ const Data = [
   },
   {
     name: "flawless",
-    eventIcon:
-      "https://lh3.googleusercontent.com/pw/AM-JKLUPOez7qoOgbusOwVoCx0pk78mHpQNuUQqX9A07SouTW2-IDeM0o4wFsmVS5qfp9IH2w__48KeY0yk83se5v6omQsyQodDaJJU2mF9yscMtbWK0Vldui6hhwIoO1PVMUxdDhTNWwgTml7AdlggJxmJh=s500-no?authuser=0",
+    eventIcon: "https://i.ibb.co/xGLtLZq/Flawless-Logo-Blue.png",
     whiteText: "FLAW",
     blueText: "LESS",
-    qrCode:
-      "https://lh3.googleusercontent.com/pw/AM-JKLWprcwfLEZwcyHaDCzmHSMTLYDsLlRravWjJhtwKZ-Og9VTzMOeEhUjjOJD4rW3dn1d9WL3aRdL4zmaNqJMykgeoeInjNcPwJbrdXUg3BzE0dHLmGMmO6RWI-_ln-DCk8KN_hbr3mQqAckorJhcck6Q=s312-no?authuser=0",
+    qrCode: "https://i.ibb.co/Dtv5QbR/qr-flawless.png",
     teamSize: "1-3",
     cashPrize: "30000",
     eventDescription:
@@ -27,10 +23,10 @@ const Data = [
   },
   {
     name: "aquizition",
-    eventIcon: "https://photos.app.goo.gl/PCZY74zBBcuNZMSx9",
+    eventIcon: "https://i.ibb.co/0hsttmB/Aquizition-Logo-Blue.png",
     whiteText: "aQUIZ",
     blueText: "ition",
-    qrCode: "https://photos.app.goo.gl/ih32xVVKYyn2Szfj8",
+    qrCode: "https://i.ibb.co/rQk2Vvx/qr-a-QUIZition.png",
     teamSize: "Individual",
     cashPrize: "10000",
     eventDescription:
@@ -38,10 +34,10 @@ const Data = [
   },
   {
     name: "bidcon",
-    eventIcon: "https://photos.app.goo.gl/cGdKa4EurCXKYvom9",
+    eventIcon: "https://i.ibb.co/2nRbdQx/Bid-Con-Logo-Blue.png",
     whiteText: "Bid",
     blueText: "Con",
-    qrCode: "https://photos.app.goo.gl/GRsMAr4NTAH3rizQA",
+    qrCode: "https://i.ibb.co/QJSzfzs/qr-bid-Con.png",
     teamSize: "1-4",
     cashPrize: "20000",
     eventDescription:
@@ -49,10 +45,10 @@ const Data = [
   },
   {
     name: "tradingarena",
-    eventIcon: "https://photos.app.goo.gl/A8ZaHSACnA96bMBX6",
+    eventIcon: "https://i.ibb.co/8btJFbC/Stock-Trading-Logo-Blue.png",
     whiteText: "TRADING",
     blueText: "ARENA",
-    qrCode: "https://photos.app.goo.gl/BBvsojFP3izti2iYA",
+    qrCode: "https://i.ibb.co/PcTZ6g4/qr-trading-Arena.png",
     teamSize: "Individual",
     cashPrize: "10000",
     eventDescription:
@@ -60,21 +56,21 @@ const Data = [
   },
   {
     name: "poker",
-    eventIcon: "https://photos.app.goo.gl/dTEgoU2HqiV3bvqe9",
+    eventIcon: "https://i.ibb.co/f1M5tFN/Poker-logo-Blue.png",
     whiteText: "POKER",
     blueText: "",
-    qrCode: "https://photos.app.goo.gl/dTEgoU2HqiV3bvqe9",
+    qrCode: "https://i.ibb.co/0Mqw20P/qr-poker.png",
     teamSize: "Individual",
-    cashPrize: "5000",
+    cashPrize: "10000",
     eventDescription:
       "Poker is a fascinating, wonderful, intricate adventure on the high seas of human nature. Can you convince the winner that they are losing? Can you play your cards right? More importantly, can you comprehend when to fold, sit back and watch? Welcome to the game of odds, moves and calculations - Poker! Poker is not a mere luck but a game of skill, calculated risks and smartly manipulated moves. You must take calculated risks, based on what you have in your hand and your apprehension of what the other players are likely to have. The same is true in business. You may not always have perfect control over what happens in your business, but you must be able to analyze various circumstances to determine when it makes sense to keep playing and when it’s better to let go and move on.",
   },
   {
     name: "pitchperfect",
-    eventIcon: "https://photos.app.goo.gl/r6TudT22Xir3gieW6",
+    eventIcon: "https://i.ibb.co/301mwst/Pitch-Perfect-Logo-Blue.png",
     whiteText: "PITCH",
     blueText: "PERFECT",
-    qrCode: "https://photos.app.goo.gl/r6TudT22Xir3gieW6",
+    qrCode: "https://i.ibb.co/S5DnyQc/qr-pitch-Perfect.png",
     teamSize: "1-2",
     cashPrize: "20000",
     eventDescription:
@@ -82,10 +78,10 @@ const Data = [
   },
   {
     name: "hookedupwithdesign",
-    eventIcon: "https://photos.app.goo.gl/r6TudT22Xir3gieW6",
+    eventIcon: "https://i.ibb.co/4ptQVR5/Hooked-Up-With-Design-Logo-Blue.png",
     whiteText: "HOOKED UP",
     blueText: "WITH DESIGN",
-    qrCode: "https://photos.app.goo.gl/r6TudT22Xir3gieW6",
+    qrCode: "https://i.ibb.co/mthTPq5/qr-hooked-Up-With-Design.png",
     teamSize: "1-4",
     cashPrize: "30000",
     eventDescription:
@@ -93,10 +89,10 @@ const Data = [
   },
   {
     name: "toptalks",
-    eventIcon: "https://photos.app.goo.gl/E83TnFibQV9irNVZ6",
+    eventIcon: "https://i.ibb.co/GWd8M6g/Top-Talks-Logo-Blue.png",
     whiteText: "TOP",
     blueText: "TALKS",
-    qrCode: "https://photos.app.goo.gl/ZmNzfmzuhP6Y7Gzp9",
+    qrCode: "https://i.ibb.co/tLrQbWm/qr-top-Talks.png",
     teamSize: "Individual",
     cashPrize: "10000",
     eventDescription:
@@ -104,10 +100,10 @@ const Data = [
   },
   {
     name: "madads",
-    eventIcon: "https://photos.app.goo.gl/SRzneHoo1HdGsaHw9",
+    eventIcon: "https://i.ibb.co/tQkYBmr/Mad-Ads-Logo-Blue.png",
     whiteText: "MAD",
     blueText: "ADS",
-    qrCode: "https://photos.app.goo.gl/GbgRvd2HbnA9DNHz6",
+    qrCode: "https://i.ibb.co/P15ZP4x/qr-mad-Ads.png",
     teamSize: "1-3",
     cashPrize: "20000",
     eventDescription:
@@ -115,10 +111,10 @@ const Data = [
   },
   {
     name: "brainsonfire",
-    eventIcon: "https://photos.app.goo.gl/PxKZyiysGWopELnU6",
+    eventIcon: "https://i.ibb.co/SQFkvbr/Brains-On-Fire-Logo-Blue.png",
     whiteText: "BRAINS",
     blueText: "ON FIRE",
-    qrCode: "https://photos.app.goo.gl/12EonD2hDyGTvMsZ8",
+    qrCode: "https://i.ibb.co/qCY4z83/qr-brains-On-Fire.png",
     teamSize: "Individual",
     cashPrize: "5000",
     eventDescription:
@@ -126,10 +122,10 @@ const Data = [
   },
   {
     name: "oth",
-    eventIcon: "https://photos.app.goo.gl/2J9SA1EiNN1TGjBv7",
+    eventIcon: "https://i.ibb.co/WDbDKBF/Online-Treasure-Hunt-Logo-Blue.png",
     whiteText: "ONLINE",
     blueText: "TREASURE HUNT",
-    qrCode: "https://photos.app.goo.gl/yMqR1oxCXb6Mor3r6",
+    qrCode: "https://i.ibb.co/v4J1tpL/qr-oth.png",
     teamSize: "Individual",
     cashPrize: "5000",
     eventDescription:
@@ -137,10 +133,10 @@ const Data = [
   },
   {
     name: "dealnodeal",
-    eventIcon: "https://photos.app.goo.gl/bdYSHJ96jXAGKKGp8",
+    eventIcon: "https://i.ibb.co/C0v1f4x/Deal-No-Deal-Logo-Blue.png",
     whiteText: "DEAL",
     blueText: "NO DEAL",
-    qrCode: "https://photos.app.goo.gl/tmAarGEYcDgiWjVz7",
+    qrCode: "https://i.ibb.co/bQpkK5X/qr-deal-No-Deal.png",
     teamSize: "1-4",
     cashPrize: "5000",
     eventDescription:
@@ -148,10 +144,10 @@ const Data = [
   },
   {
     name: "saleable",
-    eventIcon: "https://photos.app.goo.gl/MFhUTAj4MZW9hu9b8",
+    eventIcon: "https://i.ibb.co/WP9tbW4/Sale-Able-Logo-Blue.png",
     whiteText: "SALE",
     blueText: "ABLE",
-    qrCode: "https://photos.app.goo.gl/DudZm7HSZWopPvwG9",
+    qrCode: "https://i.ibb.co/DfZypqs/qr-saleable.png",
     teamSize: "1-4",
     cashPrize: "20000",
     eventDescription:
