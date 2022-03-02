@@ -7,8 +7,8 @@ module.exports = {
         Montserrat: ["Montserrat", "sans-serif"],
       },
       backgroundImage: {
-        vrbg: "url('src/images/vrbg.png')",
-        eventsbg: "url('src/images/events-bg.png')",
+        vrbg: "url('images/vrbg.png')",
+        eventsbg: "url('images/events-bg.png')",
       },
       colors: {
         footer: "#2c2c2c",

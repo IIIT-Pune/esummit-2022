@@ -23,7 +23,7 @@ const Cap = () => {
 			</div>
 			<div className="justify-center hidden lg:inline-block  ">
 				<img
-					src="./src/images
+					src="./images
           /vrface2.png"
 					className="mx-8 object-scale-down w-96 max-h-[400px]"
 					alt=""

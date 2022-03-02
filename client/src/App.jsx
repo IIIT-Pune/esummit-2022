@@ -10,7 +10,7 @@ import Speakers from "./components/Speakers/Speakers";
 import EventCard from "./components/events/EventCard";
 import FaqSection from "./components/faqs/FaqSection";
 import Footer from "./components/Footer/Footer";
-import Loader from "./images/loader.webm";
+import Loader from "../images/loader.webm";
 import { useEffect, useState } from "react";
 
 function App() {

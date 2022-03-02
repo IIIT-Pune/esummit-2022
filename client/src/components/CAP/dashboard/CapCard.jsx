@@ -62,7 +62,7 @@ const CapCard = (props) => {
 					</div>
 
 					<div className="hidden lg:inline-block">
-						<img src="src\images\chatbot2.png" alt="" />
+						<img src="images\chatbot2.png" alt="" />
 					</div>
 				</div>
 			</div>

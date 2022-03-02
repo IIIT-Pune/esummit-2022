@@ -23,6 +23,7 @@
     "react-icons": "4.2.0",
     "react-router-dom": "^6.2.1",
     "uuid": "8.3.2",
+    "vite-plugin-dynamic-import": "^0.1.1",
     "vite-plugin-require": "^0.0.8"
   },
   "devDependencies": {
