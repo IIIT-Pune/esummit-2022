@@ -52,6 +52,9 @@ const Dashboard = () => {
       <div className="flex flex-col-reverse lg:flex-row justify-center  lg:m-12">
         <div className="w-full flex justify-center">
           <div className="w-full mt-4">
+            <div className="text-white font-Montserrat text-sm">
+              Note: The changes might take upto 4 hours to reflect.
+            </div>
             <div className="p-2 my-2 font-bold border border-sky-500 backdrop-blur-lg text-sky-500 text-2xl lg:text-3xl font-Poppins flex flex-row justify-between">
               <div className="">RANK</div>
               <div className="">NAME</div>
