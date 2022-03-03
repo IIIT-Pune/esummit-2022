@@ -10,7 +10,7 @@ import Speakers from "./components/Speakers/Speakers";
 import EventCard from "./components/events/EventCard";
 import FaqSection from "./components/faqs/FaqSection";
 import Footer from "./components/Footer/Footer";
-import Loader from "../images/loader.webm";
+import Loader from "../images/loader.webp";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
 		<>
 			{showLoader && (
 				<div className="h-screen fixed w-full z-[999999] overflow-hidden flex items-center justify-center bg-black ">
-					<video autoPlay muted loop src={Loader} className="w-[60%]" />
+					<img  src={Loader} className="w-[60%]" />
 				</div>
 			)}
 			<Routes>

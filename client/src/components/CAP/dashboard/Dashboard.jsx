@@ -35,7 +35,11 @@ const Dashboard = () => {
 				.then((res) => {
 					const obj = leaders.findIndex((o) => o.email == res.data.email);
 					if (obj != -1) {
-						Setuser({ ...res.data, rank: obj, points: leaders[obj].points });
+						Setuser({
+							...res.data,
+							rank: obj + 1,
+							points: leaders[obj].points,
+						});
 					} else {
 						Setuser({ ...res.data, rank: "", points: "" });
 					}

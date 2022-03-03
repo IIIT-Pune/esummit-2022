@@ -28,7 +28,7 @@ export default function Homepage() {
   let text = document.getElementById("text");
 
   const countdown = () => {
-    const countDate = new Date("March 28, 2022 :00:00").getTime();
+    const countDate = new Date("March 18, 2022 23:59:59").getTime();
     // console.log(countDate);
     const now = new Date().getTime();
     const gap = countDate - now;
@@ -100,7 +100,7 @@ export default function Homepage() {
                 src="https://i.ibb.co/DCVmtJF/discord.png"
                 className="icons"
               />
-              <a className="hov" href="https://discord.gg/ASDahbGy">
+              <a className="hov" href="https://discord.gg/ASDahbGy" target="blank">
                 <span className="linktxt">Join Discord</span>
               </a>
             </div>
@@ -129,7 +129,7 @@ export default function Homepage() {
         <div id="countdown">
           <div className="count">
             <h3 className="Day day-time">00</h3>
-            <h3 className="Daytxt">DAY</h3>
+            <h3 className="Daytxt">DAYS</h3>
           </div>
           <div className="count">
             <h3 className="Hour hour-time">00</h3>

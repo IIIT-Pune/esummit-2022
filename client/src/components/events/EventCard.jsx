@@ -27,7 +27,7 @@ const EventCard = (props) => {
                 <span className="text-cyan-300">{data.blueText}</span>
               </div>
               <img className="w-1/3" src={data.qrCode} alt={data.name} />
-              <a href={data.registerLink}>
+              <a href={data.registerLink} target="_blank">
                 <button
                   type="submit"
                   className="text-white border-2 hover:bg-white border-white hover:text-black font-bold rounded-full m-2 p-2"
@@ -47,7 +47,7 @@ const EventCard = (props) => {
                 </div>
                 {/* Rulebook Button */}
                 <div>
-                  <a href={data.rulebookLink}>
+                  <a href={data.rulebookLink} target="_blank">
                     <button
                       type="submit"
                       className="text-cyan-200 border-2 hover:bg-cyan-700 border-cyan-200 hover:text-white font-bold rounded-full m-2 p-2 px-3"

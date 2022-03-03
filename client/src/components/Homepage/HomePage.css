@@ -73,14 +73,12 @@ body {
 }
 #popup {
   width: 100%;
-  height: 100%;
   display: flex;
   visibility: hidden;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  /* flex-direction: row; */
   position: absolute;
-  bottom: 10%;
   padding: 0 20px;
   z-index: 25;
 }
@@ -92,10 +90,11 @@ body {
   font-size: 1.5rem;
   background-color: rgba(255, 255, 255, 0.5);
   position: absolute;
-  top: 152px;
+  top: -5%;
+  right: auto;
   font-weight: 500;
   padding: 0px 10px;
-  border-radius: 5px;
+  border-radius: 50px;
 }
 .shine {
   mix-blend-mode: screen;
@@ -114,7 +113,7 @@ body {
 }
 #btndiv {
   width: 100%;
-  bottom: 5%;
+  bottom: 7.5%;
   position: absolute;
   display: flex;
   align-items: center;
@@ -174,14 +173,18 @@ body {
 .linktxt:hover {
   color: aqua;
 }
+.linktxt {
+  font-size: 17px;
+}
 .hov {
   color: white;
   font-size: 1.5rem;
   padding-left: 5%;
 }
 .icons {
-  width: 30px;
-  height: 30px;
+  width: 23px;
+  height: 23px;
+  margin: auto 0;
 }
 #youtube,
 #discord,
@@ -190,20 +193,16 @@ body {
   margin-right: 12%;
   display: flex;
   flex: row;
-  vertical-align: middle;
 }
 @media only screen and (min-width: 1300px) {
   #text {
     font-size: 6rem;
   }
   #text::before {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
   #countdown {
     width: 25%;
-  }
-  #close {
-    top: 210px;
   }
   .globe {
     bottom: 0%;
@@ -237,14 +236,20 @@ body {
     font-size: 1.5rem;
   }
   #links {
-    padding-right: 16%;
+    padding-right: 19%;
+  }
+  #text::before {
+    font-size: 0.95rem;
   }
   .hov {
     font-size: 1.1rem;
   }
   .icons {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
+  }
+  .linktxt {
+    font-size: 14px;
   }
   .globe {
     bottom: 0%;
@@ -276,14 +281,17 @@ body {
     width: 22%;
   }
   #links {
-    padding-right: 23%;
+    padding-right: 24%;
   }
   .hov {
     font-size: 1rem;
   }
   .icons {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
+  }
+  .linktxt {
+    font-size: 13px;
   }
   .day-time,
   .hour-time,
@@ -295,7 +303,7 @@ body {
     font-size: 5rem;
   }
   #text::before {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
   .globe {
     bottom: 0%;
@@ -326,14 +334,17 @@ body {
     width: 20%;
   }
   #links {
-    padding-right: 23%;
+    padding-right: 24%;
   }
   .hov {
     font-size: 0.9rem;
   }
   .icons {
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
+  }
+  .linktxt {
+    font-size: 12px;
   }
   .day-time,
   .hour-time,
@@ -351,7 +362,7 @@ body {
     font-size: 4.2rem;
   }
   #text::before {
-    font-size: 0.825rem;
+    font-size: 0.8rem;
   }
   .globe {
     bottom: 0%;
@@ -380,14 +391,17 @@ body {
     transform: translateY(30vh);
   }
   #links {
-    padding-right: 22%;
+    padding-right: 23%;
   }
   .hov {
     font-size: 0.8rem;
   }
   .icons {
-    width: 17px;
-    height: 17px;
+    width: 13px;
+    height: 13px;
+  }
+  .linktxt {
+    font-size: 11px;
   }
 
   .day-time,
@@ -431,14 +445,14 @@ body {
 }
 @media (max-width: 600px) {
   #btndiv {
-    height: 90%;
+    bottom: 42%;
   }
   #animate {
     transform: translateY(35vh);
   }
 
   #links {
-    padding-right: 30%;
+    padding-right: 21%;
   }
   .hov {
     font-size: 0.5rem;
@@ -446,6 +460,9 @@ body {
   .icons {
     width: 10px;
     height: 10px;
+  }
+  .linktxt {
+    font-size: 8px;
   }
 
   #countdown {
@@ -469,7 +486,7 @@ body {
     font-size: 2.3rem;
   }
   #text::before {
-    font-size: 0.46rem;
+    font-size: 0.425rem;
   }
   .globe {
     bottom: 0%;
