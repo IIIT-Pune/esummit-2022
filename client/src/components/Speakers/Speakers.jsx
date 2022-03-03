@@ -49,7 +49,7 @@ function Speakers() {
         >
           <div
             className="row flex flex-col gap-y-8 items-center lg:flex-row justify-around"
-            style={{ marginTop: "114px" }}
+            style={{ marginTop: "100px" }}
           >
             <div className="col-md-4">
               <SpeakerCard
@@ -86,7 +86,7 @@ function Speakers() {
           <div className="row"></div>
           <div
             className="row flex flex-col gap-y-8 items-center lg:flex-row justify-around"
-            style={{ marginTop: "120px" }}
+            style={{ marginTop: "30px" }}
           >
             <div className="col-md-4">
               <SpeakerCard
