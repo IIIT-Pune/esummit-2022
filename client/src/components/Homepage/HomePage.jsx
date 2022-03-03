@@ -129,7 +129,7 @@ export default function Homepage() {
         <div id="countdown">
           <div className="count">
             <h3 className="Day day-time">00</h3>
-            <h3 className="Daytxt">DAY</h3>
+            <h3 className="Daytxt">DAYS</h3>
           </div>
           <div className="count">
             <h3 className="Hour hour-time">00</h3>

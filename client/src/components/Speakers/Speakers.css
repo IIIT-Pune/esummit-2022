@@ -78,6 +78,8 @@
   left: 66.528px;
   top: 52.668px;
   background-color: #000a0c;
+  object-fit: contain;
+  overflow: hidden;
   border-radius: 100px;
   border: 6px solid #000a0c;
   box-sizing: border-box;

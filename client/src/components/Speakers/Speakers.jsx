@@ -67,7 +67,7 @@ function Speakers() {
                 name={"Dr. Annurag Batra"}
                 details={"Chairman - Businessworld"}
                 date={"25 MARCH 6:00 PM"}
-                picture={"https://i.ibb.co/S63bSX6/Dr-Annurag-Batra.jpg"}
+                picture={"https://i.ibb.co/xjHWGhH/Dr-Annurag-Batra.png"}
                 lk={
                   "https://www.linkedin.com/in/batraanurag/?originalSubdomain=in"
                 }
@@ -78,7 +78,7 @@ function Speakers() {
                 name={"Mahalakshmi Saravana"}
                 details={"Founder-Women Entrepreneurs India"}
                 date={"26 MARCH 4:00 PM"}
-                picture={"https://i.ibb.co/NK6mnb1/Mahalakshmi.png"}
+                picture={"https://i.ibb.co/V9Gkrhq/Mahalakshmi.png"}
                 lk={"https://www.linkedin.com/in/mahalakshmisaravanan/"}
               />
             </div>
@@ -93,7 +93,7 @@ function Speakers() {
                 name={"Sandeep Jain"}
                 details={"Founder - GeeksForGeeks"}
                 date={"26 MARCH 6:00 PM"}
-                picture={"https://i.ibb.co/BnqLJy2/Sandeep-Jain.jpg"}
+                picture={"https://i.ibb.co/5rGXMjc/Sandeep-Jain.png"}
                 lk={"https://www.linkedin.com/in/sandeep-jain-b3940815/"}
               />
             </div>
@@ -102,7 +102,7 @@ function Speakers() {
                 name={"Paresh Gupta"}
                 details={"Founder & CEO - GCEC"}
                 date={"27 MARCH 4:00 PM"}
-                picture={"https://i.ibb.co/q9HR7nL/Paresh-Gupta.jpg"}
+                picture={"https://i.ibb.co/T05dBHH/Paresh-Gupta.jpg"}
                 lk={"https://www.linkedin.com/in/pareshgupta1/"}
               />
             </div>
@@ -111,7 +111,7 @@ function Speakers() {
                 name={"Arjun Vaidya "}
                 details={"Founder - Dr.Vaidya's"}
                 date={"27 MARCH 6:00PM"}
-                picture={"https://i.ibb.co/GshLBqR/Arjun-Vaidya.jpg"}
+                picture={"https://i.ibb.co/nBb6kGR/Arjun-Vaidya.png"}
                 lk={
                   "https://www.linkedin.com/in/arjunvaidya/?originalSubdomain=in"
                 }
