@@ -14,35 +14,35 @@ const Footer = () => {
     <>
       <div className="bg-black p-4 flex flex-col justify-center items-center">
         <div className="space-x-2 flex flex-row justify-center items-center p-4">
-          <a href="">
+          <a href="https://www.instagram.com/ecell_iiitp">
             <FontAwesomeIcon
               icon={faInstagram}
               size="xl"
               className="fa-fw p-2 py-2.5 border-2 border-black rounded-full bg-cyan-300 hover:bg-cyan-500"
             />
           </a>
-          <a href="">
+          <a href="https://www.youtube.com/channel/UCBRfXeWo-YSFt25wlZGr30w">
             <FontAwesomeIcon
               icon={faYoutube}
               size="xl"
               className="fa-fw p-2 py-2.5 border-2 border-black rounded-full bg-cyan-300 hover:bg-cyan-500"
             />
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/company/e-cell-iiit-pune/">
             <FontAwesomeIcon
               icon={faLinkedin}
               size="xl"
               className="fa-fw p-2 py-2.5 border-2 border-black rounded-full bg-cyan-300 hover:bg-cyan-500"
             />
           </a>
-          <a href="">
+          <a href="mailto:ecell@iiitp.ac.in">
             <FontAwesomeIcon
               icon={faEnvelope}
               size="xl"
               className="fa-fw p-2 py-2.5 border-2 border-black rounded-full bg-cyan-300 hover:bg-cyan-500"
             />
           </a>
-          <a href="">
+          <a href="https://discord.com/invite/PP2EDvQSbA">
             <FontAwesomeIcon
               icon={faDiscord}
               size="xl"
