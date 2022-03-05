@@ -19,9 +19,10 @@ function EventSection({ children }) {
             setShowModal(false);
           }}
         /> */}
-        <div className="text-center font-bold text-4xl md:text-6xl">
-          <span className="text-white">EVENTS' </span>
-          <span className="text-cyan-400"> SHELF </span>
+        <div className="text-center font-bold text-4xl md:text-6xl flex flex-col items-center justify-center">
+          <div><span className="text-white">EVENTS' </span>
+            <span className="text-cyan-400"> SHELF </span></div>
+          <hr className="secheading"/>
         </div>
         <Shelf>
           {Data.map((details) => (

@@ -1,5 +1,5 @@
 import React from "react";
-// import "./About.css";
+import "./About.css";
 const About = () => {
   return (
     <>
@@ -7,10 +7,14 @@ const About = () => {
         className="flex flex-col justify-center items-center space-y-8 p-4 pt-14 mb-14 sm:p-8 text-white font-Montserrat "
         id="about"
       >
-        <div className="text-center font-bold text-4xl md:text-6xl">
+        <div className="text-center font-bold text-4xl md:text-6xl justify-center items-center flex flex-col">
+          <div>
           <span className="">ABOUT </span>
-          <span className="text-cyan-400"> E-SUMMIT </span>
+            <span className="text-cyan-400"> E-SUMMIT </span>
+            </div>
+        <hr className="secheadingabout"/>
         </div>
+
         <div className="relative z-10 space-y-8 text-2xs md:text-2xl w-4/5">
           <p className="text-justify">
             E-Summit’22 is the largest entrepreneurship conclave ever by E-Cell,
