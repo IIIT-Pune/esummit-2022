@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import eventIcon from "../Images/events/icons/eventicon.png";
 import qrCode from "../Images/events/qr/d2c.png";
 import NavBar from "../Homepage/NavBar";
@@ -9,6 +9,9 @@ const EventCard = (props) => {
   const { event_name } = useParams();
   const data = Data.find((obj) => obj.name === event_name);
   // console.log(data);
+  useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
   return (
     <div className=" bg-eventsbg bg-cover flex justify-center items-center lg:h-screen">
       <div className="flex justify-center items-center my-10">

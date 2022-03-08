@@ -10,13 +10,13 @@ import { useNavigate } from "react-router-dom";
 
 const SignInCapForm = (props) => {
 	const [MailError, setMailError] = useState("");
-
+	const [loading, Setloading] = useState(false);
 	const [formData, setformData] = useState({
 		email: "",
 		password: "",
 	});
 	const navigate = useNavigate();
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 		let flag = 1;
 		Object.values(formData).map((obj) => {
@@ -36,7 +36,8 @@ const SignInCapForm = (props) => {
 		} else if (MailError.email != "") {
 			setMailError("");
 		}
-		axios
+		Setloading(true);
+		await axios
 			.post(`${baseUrl}api/auth/login`, {
 				email: formData.email,
 				password: formData.password,
@@ -56,6 +57,7 @@ const SignInCapForm = (props) => {
 			.catch((err) => {
 				console.log(err);
 			});
+		Setloading(false);
 	};
 
 	return (
@@ -106,9 +108,9 @@ const SignInCapForm = (props) => {
 							/>
 						</div>
 					</div>
-					<ButtonCmp>
+					<ButtonCmp loading={loading}>
 						{/* {props.capFormButtonText} */}
-						LOGIN
+						{loading ? "Processing.." : "LOGIN"}
 					</ButtonCmp>
 				</form>
 			</div>
