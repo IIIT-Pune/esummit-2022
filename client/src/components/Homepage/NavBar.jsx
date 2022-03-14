@@ -36,7 +36,9 @@ function NavBar() {
                   <a href="#faqs" className="nav-link nav-link-ltr ">
                     FAQs
                   </a>
-
+                  <a href="#sponsors" className="nav-link nav-link-ltr ">
+                    SPONSORS
+                  </a>
                   <a href="/leaderboard" className="nav-link nav-link-ltr ">
                     LEADERBOARD
                   </a>
@@ -154,6 +156,12 @@ function NavBar() {
                   className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
                 >
                   FAQS
+                </a>
+                <a
+                  href="/#sponsors"
+                  className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
+                >
+                  SPONSORS
                 </a>
                 <a
                   href="/leaderboard"

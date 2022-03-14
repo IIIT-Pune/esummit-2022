@@ -1,0 +1,50 @@
+.sp-d{
+    background-color: #000A0C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sp-d .title{
+    font-size: 64px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sp-d .subt{
+    font-size: 46px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sp-d .imcont{
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sp-d .imitem{
+    min-width: 33%;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.logo:hover{
+    transform: scale(1.1,1.1);
+    transition: transform 0.2s;
+}
+
+@media only screen and (max-width: 500px) {
+    .sp-d .title{
+        font-size: 46px;
+    }
+
+    .sp-d .subt{
+        font-size: 30px;
+    }
+
+
+}
