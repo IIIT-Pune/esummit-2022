@@ -33,10 +33,12 @@ function NavBar() {
 										SPEAKERS
 									</a>
 
-									<a href="#faqs" className="nav-link nav-link-ltr ">
+									<a href="/#faqs" className="nav-link nav-link-ltr ">
 										FAQs
 									</a>
-
+									<a href="/#sponsors" className="nav-link nav-link-ltr ">
+										SPONSORS
+									</a>
 									<Link to="/leaderboard" className="nav-link nav-link-ltr ">
 										LEADERBOARD
 									</Link>
@@ -156,11 +158,17 @@ function NavBar() {
 									FAQS
 								</a>
 								<a
-									href="/leaderboard"
+									href="/#sponsors"
+									className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
+								>
+									SPONSORS
+								</a>
+								<Link
+									to="/leaderboard"
 									className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
 								>
 									LEADERBOARD
-								</a>
+								</Link>
 							</div>
 						</div>
 					)}
