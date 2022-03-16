@@ -17,7 +17,7 @@ function NavBar() {
 								</Link>
 							</div>
 							<div className="hidden md:block">
-								<div className="flex items-baseline space-x-8">
+								<div className="flex items-baseline space-x-4 lg:space-x-8 text-[10px] lg:text-[14px]">
 									<a href="/" className="nav-link nav-link-ltr ">
 										HOME
 									</a>
@@ -36,6 +36,10 @@ function NavBar() {
 									<a href="#faqs" className="nav-link nav-link-ltr ">
 										FAQs
 									</a>
+
+									<Link to="/leaderboard" className="nav-link nav-link-ltr ">
+										LEADERBOARD
+									</Link>
 									{/* <a
                     href="#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -150,6 +154,12 @@ function NavBar() {
 									className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
 								>
 									FAQS
+								</a>
+								<a
+									href="/leaderboard"
+									className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
+								>
+									LEADERBOARD
 								</a>
 							</div>
 						</div>
