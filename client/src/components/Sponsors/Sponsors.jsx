@@ -41,6 +41,15 @@ const Sponsors = () => {
                     />
                   </a>
                 </div>
+                <div></div>
+                <div className="w-[70%] px-4 md:pt-8 md:w-[100%] logo">
+                  <a href="https://aglasem.com/" target="_blank">
+                    <img
+                      src="https://i.ibb.co/Hp3k03L/aglasem-White.png"
+                      alt="Aglasem"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
             <div className="space-y-8 px-8">
@@ -109,7 +118,7 @@ const Sponsors = () => {
                 <div className="w-[60%] md:w-[20%] logo">
                   <a href="https://www.bhaskar.com/" target="_blank">
                     <img
-                      src="https://i.ibb.co/CWww6HQ/z7-Htd-TVd-400x400.png"
+                      src="https://i.ibb.co/ysbcNSD/Dainikbhaskarnew2.png"
                       alt="Dainik Bhaskar"
                     />
                   </a>

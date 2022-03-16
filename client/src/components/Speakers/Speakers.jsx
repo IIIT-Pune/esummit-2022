@@ -34,9 +34,11 @@ function Speakers() {
             </span>
           </div> */}
           <div className="text-center font-bold text-4xl md:text-6xl font-Montserrat flex flex-col items-center justify-center">
-            <div><span className="text-white">SPEAKER </span>
-            <span className="text-cyan-400"> SESSIONS </span></div>
-            <hr className="secheading"/>
+            <div>
+              <span className="text-white">SPEAKER </span>
+              <span className="text-cyan-400"> SESSIONS </span>
+            </div>
+            <hr className="secheading" />
           </div>
         </div>
         <div
@@ -63,7 +65,7 @@ function Speakers() {
                 }
               />
             </div>
-            <div className="col-md-4">
+            {/* <div className="col-md-4">
               <SpeakerCard
                 name={"Dr. Annurag Batra"}
                 details={"Chairman - Businessworld"}
@@ -73,14 +75,23 @@ function Speakers() {
                   "https://www.linkedin.com/in/batraanurag/?originalSubdomain=in"
                 }
               />
-            </div>
+            </div> */}
             <div className="col-md-4">
               <SpeakerCard
                 name={"Mahalakshmi Saravana"}
                 details={"Founder-Women Entrepreneurs India"}
-                date={"26 MARCH 4:00 PM"}
+                date={"25 MARCH 5:00 PM"}
                 picture={"https://i.ibb.co/V9Gkrhq/Mahalakshmi.png"}
                 lk={"https://www.linkedin.com/in/mahalakshmisaravanan/"}
+              />
+            </div>
+            <div className="col-md-4">
+              <SpeakerCard
+                name={"Disha Singla"}
+                details={"Cofounder - Supreme Incubator"}
+                date={"25 MARCH 6:00 PM"}
+                picture={"https://i.ibb.co/vmP0ZT7/dishabw.jpg"}
+                lk={"https://www.linkedin.com/in/dishasingla"}
               />
             </div>
           </div>
@@ -89,13 +100,31 @@ function Speakers() {
             className="row flex flex-col gap-y-8 items-center lg:flex-row justify-around"
             style={{ marginTop: "30px" }}
           >
-            <div className="col-md-4">
+            {/* <div className="col-md-4">
               <SpeakerCard
                 name={"Sandeep Jain"}
                 details={"Founder - GeeksForGeeks"}
                 date={"26 MARCH 6:00 PM"}
                 picture={"https://i.ibb.co/5rGXMjc/Sandeep-Jain.png"}
                 lk={"https://www.linkedin.com/in/sandeep-jain-b3940815/"}
+              />
+            </div> */}
+            <div className="col-md-4">
+              <SpeakerCard
+                name={"Abhishek Biswas"}
+                details={"Founder - Sattvik Council of India"}
+                date={"26 MARCH 4:00 PM"}
+                picture={"https://i.ibb.co/yXs2jJT/abhishek-biswas2.jpg"}
+                lk={"https://www.linkedin.com/in/sci-abhishek-biswas"}
+              />
+            </div>
+            <div className="col-md-4">
+              <SpeakerCard
+                name={"Himanshi Singh"}
+                details={"Founder - Let's Learn"}
+                date={"26 MARCH 6:00 PM"}
+                picture={"https://i.ibb.co/mbwnKzF/himanshisinghbwjpg.jpg"}
+                lk={"https://www.youtube.com/c/LetsLEARN2016"}
               />
             </div>
             <div className="col-md-4">
@@ -107,6 +136,12 @@ function Speakers() {
                 lk={"https://www.linkedin.com/in/pareshgupta1/"}
               />
             </div>
+          </div>
+          <div className="row"></div>
+          <div
+            className="row flex flex-col gap-y-8 items-center lg:flex-row justify-around"
+            style={{ marginTop: "30px" }}
+          >
             <div className="col-md-4">
               <SpeakerCard
                 name={"Arjun Vaidya "}
