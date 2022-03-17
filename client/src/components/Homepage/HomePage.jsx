@@ -100,7 +100,11 @@ export default function Homepage() {
                 src="https://i.ibb.co/DCVmtJF/discord.png"
                 className="icons"
               />
-              <a className="hov" href="https://discord.gg/ASDahbGy" target="blank">
+              <a
+                className="hov"
+                href="https://discord.gg/AKGwceRum6"
+                target="blank"
+              >
                 <span className="linktxt">Join Discord</span>
               </a>
             </div>
