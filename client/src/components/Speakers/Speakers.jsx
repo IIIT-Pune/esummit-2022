@@ -59,7 +59,7 @@ function Speakers() {
                 name={"Prasoon Gupta"}
                 details={"Cofounder - Satvikko"}
                 date={"25 MARCH 4:00 PM"}
-                picture={"https://i.ibb.co/N3xNss4/Prasoon-Gupta.png"}
+                picture={"https://i.ibb.co/F7gmg8q/Prasoon-Gupta.jpg"}
                 lk={
                   "https://www.linkedin.com/in/prasoongupta/?originalSubdomain=in"
                 }
@@ -132,7 +132,7 @@ function Speakers() {
                 name={"Paresh Gupta"}
                 details={"Founder & CEO - GCEC"}
                 date={"27 MARCH 4:00 PM"}
-                picture={"https://i.ibb.co/T05dBHH/Paresh-Gupta.jpg"}
+                picture={"https://i.ibb.co/jknZkxC/Paresh-Gupta.png"}
                 lk={"https://www.linkedin.com/in/pareshgupta1/"}
               />
             </div>
