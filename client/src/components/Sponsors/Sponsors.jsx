@@ -116,7 +116,7 @@ const Sponsors = () => {
                   </a>
                 </div>
                 <div className="w-[60%] md:w-[20%] logo">
-                  <a href="https://www.bhaskar.com/" target="_blank">
+                  <a href="https://www.bhaskarhindi.com/" target="_blank">
                     <img
                       src="https://i.ibb.co/ysbcNSD/Dainikbhaskarnew2.png"
                       alt="Dainik Bhaskar"
