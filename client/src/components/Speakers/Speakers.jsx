@@ -65,17 +65,7 @@ function Speakers() {
                 }
               />
             </div>
-            {/* <div className="col-md-4">
-              <SpeakerCard
-                name={"Dr. Annurag Batra"}
-                details={"Chairman - Businessworld"}
-                date={"25 MARCH 6:00 PM"}
-                picture={"https://i.ibb.co/xjHWGhH/Dr-Annurag-Batra.png"}
-                lk={
-                  "https://www.linkedin.com/in/batraanurag/?originalSubdomain=in"
-                }
-              />
-            </div> */}
+
             <div className="col-md-4">
               <SpeakerCard
                 name={"Mahalakshmi Saravana"}
@@ -120,20 +110,20 @@ function Speakers() {
             </div>
             <div className="col-md-4">
               <SpeakerCard
+                name={"Vatsal Kanakiya"}
+                details={"Principal & CTO - 100X.VC"}
+                date={"26 MARCH 5:00 PM"}
+                picture={"https://i.ibb.co/pwTF3p2/Vatsal-Kanakiya.jpg"}
+                lk={"https://www.linkedin.com/in/vazzup/"}
+              />
+            </div>
+            <div className="col-md-4">
+              <SpeakerCard
                 name={"Himanshi Singh"}
                 details={"Founder - Let's Learn"}
                 date={"26 MARCH 6:00 PM"}
                 picture={"https://i.ibb.co/mbwnKzF/himanshisinghbwjpg.jpg"}
                 lk={"https://www.youtube.com/c/LetsLEARN2016"}
-              />
-            </div>
-            <div className="col-md-4">
-              <SpeakerCard
-                name={"Paresh Gupta"}
-                details={"Founder & CEO - GCEC"}
-                date={"27 MARCH 4:00 PM"}
-                picture={"https://i.ibb.co/jknZkxC/Paresh-Gupta.png"}
-                lk={"https://www.linkedin.com/in/pareshgupta1/"}
               />
             </div>
           </div>
@@ -144,13 +134,29 @@ function Speakers() {
           >
             <div className="col-md-4">
               <SpeakerCard
+                name={"Paresh Gupta"}
+                details={"Founder & CEO - GCEC"}
+                date={"27 MARCH 4:00 PM"}
+                picture={"https://i.ibb.co/jknZkxC/Paresh-Gupta.png"}
+                lk={"https://www.linkedin.com/in/pareshgupta1/"}
+              />
+            </div>
+            <div className="col-md-4">
+              <SpeakerCard
+                name={"Dr. Annurag Batra"}
+                details={"Chairman - BW Businessworld"}
+                date={"27 MARCH 5:00 PM"}
+                picture={"https://i.ibb.co/xjHWGhH/Dr-Annurag-Batra.png"}
+                lk={"https://www.linkedin.com/in/batraanurag/"}
+              />
+            </div>
+            <div className="col-md-4">
+              <SpeakerCard
                 name={"Arjun Vaidya "}
                 details={"Founder - Dr.Vaidya's"}
                 date={"27 MARCH 6:00PM"}
                 picture={"https://i.ibb.co/nBb6kGR/Arjun-Vaidya.png"}
-                lk={
-                  "https://www.linkedin.com/in/arjunvaidya/?originalSubdomain=in"
-                }
+                lk={"https://www.linkedin.com/in/arjunvaidya/"}
               />
             </div>
           </div>
