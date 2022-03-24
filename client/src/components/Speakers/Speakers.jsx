@@ -1,6 +1,10 @@
 import React from "react";
 import SpeakerCard from "./SpeakerCard";
 import "./Speakers.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBell, faEnvelope } from "@fortawesome/free-regular-svg-icons";
+// import { faBell } from "@fortawesome/free-solid-svg-icons";
+
 const Pict =
   "https://static.vecteezy.com/system/resources/previews/002/275/847/original/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg";
 
@@ -34,9 +38,25 @@ function Speakers() {
             </span>
           </div> */}
           <div className="text-center font-bold text-4xl md:text-6xl font-Montserrat flex flex-col items-center justify-center">
-            <div>
-              <span className="text-white">SPEAKER </span>
-              <span className="text-cyan-400"> SESSIONS </span>
+            <div className="flex flex-col md:flex-row justify-center items-center ">
+              {/* <div></div> */}
+              <div>
+                <span className="text-white">SPEAKER </span>
+                <span className="text-cyan-400"> SESSIONS </span>
+              </div>
+              <div className="pt-2 md:pt-0 md:pl-8 text-center">
+                <a
+                  href="https://forms.gle/MhG4QyY9k7hzYNjp6"
+                  target="_blank"
+                  className="flex justify-center items-center"
+                >
+                  <FontAwesomeIcon
+                    icon={faBell}
+                    size="xs"
+                    className="bg-cyan-300 hover:bg-cyan-500 fa-fw p-2 py-2.5 border-2 border-black rounded-full "
+                  />
+                </a>
+              </div>
             </div>
             <hr className="secheading" />
           </div>
@@ -162,9 +182,9 @@ function Speakers() {
           </div>
         </div>
         <div className="sp"></div>
-        <div className="text-white pt-10 px-4 tracking-wider font-Montserrat font-bold text-4xl text-center">
+        {/* <div className="text-white pt-10 px-4 tracking-wider font-Montserrat font-bold text-4xl text-center">
           . . . more to be added soon
-        </div>
+        </div> */}
       </div>
     </div>
   );
